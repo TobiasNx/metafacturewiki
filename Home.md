@@ -1,18 +1,17 @@
 Welcome to the metafacture-core wiki!
 
-# Overview
 
-## Motivation
+# Motivation
 
-## Architecture
+# Architecture
 
-### Framework
+## Framework
 
-### Morph
+## Morph
 
-### Flux
+## Flux
 
-### Modules
+## Modules
 
 # User Guides
 1. Metafacture Framework
