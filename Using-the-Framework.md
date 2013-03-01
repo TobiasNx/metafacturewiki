@@ -22,8 +22,7 @@ final ListMapWriter writer = new ListMapWriter();
 reader.setReceiver(metamorph).setReceiver(writer);
 
 //start processing
-reader.read(input);
-`
+reader.read(input);`
 
 First all elements of the processing chain are created.
 Pipeline elements are connected calling . The call `setReceiver()` returns
