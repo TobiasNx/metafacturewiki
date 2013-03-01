@@ -1,3 +1,5 @@
+We plan to overhaul the syntax of Flux. Suggestions are welcome and collected here.
+
 # Suggestion from Christoph
 
 ```
