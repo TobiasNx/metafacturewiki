@@ -8,19 +8,15 @@ Welcome to the metafacture-core wiki!
 # Architecture
 
 ## Framework
+[[Framework User Guide]]
 
 ## Morph
+[[Morph User Guide]]
 
 ## Flux
+[[Flux User Guide]]
 
 ## Modules
-
-# User Guides
-1. [[Framework User Guide]]
-2. [[Morph User Guide]]
-3. Metafacture Flux (to come)
-
-# Tutorials
 
 # Developers Corner
 
