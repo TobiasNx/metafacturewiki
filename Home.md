@@ -17,7 +17,7 @@ Welcome to the metafacture-core wiki!
 
 # User Guides
 1. [[Framework User Guide]]
-2. Metafacture Morph (to come)
+2. [[Morph User Guide]]
 3. Metafacture Flux (to come)
 
 # Tutorials
