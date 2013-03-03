@@ -10,3 +10,7 @@ If you are working with the source code directly, execute the class `org.culture
 
 If executed without arguments, Flux will display a short help text along with a list of all registered commands. 
 
+# Adding new Commands
+
+_under construction_
+
