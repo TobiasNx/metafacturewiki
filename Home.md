@@ -18,6 +18,6 @@ Welcome to the metafacture-core wiki!
 
 ## Modules
 
-# Developers Corner
+# Developer's Corner
 
 * [[Discussion on Flux syntax]]
