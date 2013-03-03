@@ -41,6 +41,21 @@ reader.setReceiver(splitter).setReceiver("Tn", writer1);
 splitter.setReceiver("Tp", writer2);
 ```
 
+# Types
+
+
+
+# Complex Objects as Eventstream
+
+```java
+public interface StreamReceiver {
+	void startRecord(String identifier);
+	void endRecord();
+	void startEntity(String name);
+	void endEntity();
+	void literal(String name, String value);
+```
+
 # Error Handling
 If an exception occurs during the processing of a stream of records, it is back
 propagated to the first element in the chain. This normally means that
