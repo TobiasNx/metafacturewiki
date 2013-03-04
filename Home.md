@@ -1,7 +1,4 @@
-Das Wiki ist für alle an github angemeldeten Nutzer editierbar.... 
-
 Welcome to the metafacture-core wiki!
-
 
 # Motivation
 
