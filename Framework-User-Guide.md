@@ -42,17 +42,17 @@ reader.setReceiver(splitter).setReceiver("Tn", writer1);
 splitter.setReceiver("Tp", writer2);
 ```
 
-# Types
+# Piping different Objects
 
-# The Interface between Pipes
+
+
+# Objects as Eventstream
 
 ```java
 public interface StreamSender {
 	<R extends StreamReceiver> R setReceiver(R streamReceiver);
 }
 ```
-
-# Complex Objects as Eventstream
 
 ```java
 public interface StreamReceiver {
