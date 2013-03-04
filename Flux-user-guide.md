@@ -8,8 +8,9 @@ There are two options: either you check out the source code in your favorite IDE
 
 If you are working with the source code directly, execute the class `org.culturegraph.mf.Flux`. If you are working with a distribution of Metafacture, execute the script `flux.sh` or `flux.bat` in the `bin/` folder.
 
-## Getting Help
-If executed without arguments, Flux will display a short help text along with a list of all registered commands. 
+## Getting Help and Inspiration
+1. If executed without arguments, Flux will display a short help text along with a list of all registered commands. 
+2. There are several example flux files along with sample data in the folder `examples/`.
 
 ## Run a Flux-File
 
