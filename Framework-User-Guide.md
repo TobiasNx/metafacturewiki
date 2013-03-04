@@ -1,5 +1,6 @@
 This page explains how to create a Metafacture objects and how to assemble them to form a processing pipeline. We use as an example a simple pipeline containing a Metamorph instance.
 
+
 # Building a Flow
 
 A Flow consists of a data source, an arbitrary number of pipe elements and finally a data sink.
@@ -43,7 +44,13 @@ splitter.setReceiver("Tp", writer2);
 
 # Types
 
+# The Interface between Pipes
 
+```java
+public interface StreamSender {
+	<R extends StreamReceiver> R setReceiver(R streamReceiver);
+}
+```
 
 # Complex Objects as Eventstream
 
