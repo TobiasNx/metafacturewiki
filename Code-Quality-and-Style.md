@@ -2,7 +2,7 @@ This document outlines standards of code quality and code style which we would l
 
 
 # Build Environment
-We currently use Maven 3.0.4. For a full build call the `package` goal. To build a binary distribution call `mvn clean package assembly:single`. See `/pom.xml` for the build configuration. All build related issues are to be handled by Maven and Maven only (No extra qnt etc.). 
+We currently use Maven 3.0.4. For a full build call the `package` goal. To build a binary distribution call `mvn clean package assembly:single`. See `/pom.xml` for the build configuration. All build related issues are to be handled by Maven and Maven only (No extra ant etc.). 
 The folder structure of the project follows the Maven standards. The extra folder `/quality_assurance` which contains rule sets for static code analysis. `modules` is a placeholder for extensions.
 
 # Logging
