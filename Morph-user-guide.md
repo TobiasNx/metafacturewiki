@@ -175,6 +175,137 @@ forgetting to rename the data (removing the '@') in the final processing step.
 
 ## Collecting Pieces of Data
 
+In the case that an output depends on the values from more then one literal, we
+need to collect literals. Collectors are defined under the `<rules>` tag, just
+as `<data>` tags. `<data>` tags are be put inside the respective collectors
+to indicate which literals are to be collected. The following paragraphs briefly
+introduce the different collectors available. Note that all types of collectors
+except `<entity>` can be nested. To all types of collectors post-processing steps can be added
+by using the `<postprocess>` tag.
 
+
+`<combine>` for instance is used to build one output literal from a
+combination of input literals. The following example  for
+instance collects the sur- and forename which are stored in separate literals to
+combine them according to the pattern 'surname, forename'.
+
+```xml
+<combine name="gnd:variantNameForThePerson" value="${surname}, ${forename}">
+  <data source="028A.a" name="surname" />
+  <data source="028A.d" name="forename"/>
+</combine>
+```
+
+There are several important points to note: By default `<combine>` waits until
+at least one value from each `<data>` tag is received. If the collection is
+not complete on record end, no output is generated. After each output, the state
+of `<combine>` is reset. If one `<data>` tag receives literals repeatedly
+before the collection is complete only the last value will be retained.
+
+
+
+The standard behavior of `<combine>` can be controlled with several arguments:
+`flushOn= "entityname"` generates output on the end of each entity with name
+_entityname_. Variables in the output pattern which are not yet bound to a
+value, are replaced with the empty string. Use `flushOn="record"` to set the
+record end as output trigger.
+`reset="false"` disables the reset after output.
+`sameEntity="true"` will reset the `<combine>` after each entity end and
+thus enforce combinations stemming from the same entities only. Note that the
+implementation only executes a reset if actually needed. Using `sameEntity="true"` has thus no negative impact on performance.
+
+For a list of all available collectors see [[Metamorph Collectors]]
+
+## Parameters to Metamorph Definitions
+
+Metamorph definitions may contain parameters. They follow the pattern `$[NAME]`:
+
+```xml
+<data name="edm:rights" source="_id">
+   <constant value="$[rights]" />
+</data>
+```
+
+`\$[rights]` in this case is a compile-time variable which is evaluated on
+creation of the respective Metamorph object.
+Thes variable in square brackets are not to be confused with the ones in curly
+brackets, which are evaluated at run-time.
+
+Compile-time variable are passed to Metamorph as a constructor parameter.
+
+```java
+final Map<String, String> vars = new HashMap<String, String>();
+vars.put("rights", "CC-0");
+
+final Metamorph metamorph = new Metamorph("morphdef.xml", vars);
+```
+
+The `<vars>` section in the Metamorph definition can be used to set defaults:
+
+```xml
+<vars>
+   <var name="rights" value="CC0" />
+</vars>
+```
+
+## Defining Macros
+
+Macros can be defined within the `<macros>` tag and use the same parameter
+mechanism as code within the `<rules>` tag. 
+Macros are called with the `<call-macro>` tag. Attributes
+of the tag are used as parameters:
+
+```xml
+<macros>
+   <macro name="concat-up">
+      <concat delimiter=", " name="$[literal_name]">
+         <data source="$[literal_name]" >
+            <case to="upper"/>
+         </data>
+      </concat>
+   </macro>
+</macros>
+<rules>
+   <call-macro name="concat-up" literal_name="data1"/>
+   <call-macro name="concat-up" literal_name="data2"/>
+</rules>
+```
+
+Parameters are scoped, which means that the ones provided with the `call-macro` tag shadow global ones. Macros cannot be nested.
+
+
+
+##Splitting Metamorph Definitions for Reuse
+
+In a complex project setting there may be several Metamorph definitions in use,
+and it is likely that they share common parts. Imagine for instance a
+transformations from Marc 21 record holding data on books to RDF, and Marc 21
+records hodling data on authors to RDF. Both make use of a table assinging
+country names to ISO country codes. Such a table should only exist once. To
+accomodate for such reuse, Metamorph offes an include mechanism based on
+XInclude (http://www.w3.org/TR/xinclude/). The following snippet shows an example in which a `<map>` is included.
+
+```xml
+<!-- main metamorph definition -->				
+[...]
+<maps>
+   <include href="src/test/resources/mymap.xml" parse="xml"
+	 xmlns="http://www.w3.org/2001/XInclude" />
+</maps>
+[...]
+```
+
+```xml
+<!-- mymap.xml -->
+<?xml version="1.1" encoding="UTF-8"?>
+<map name="island_map" xmlns="http://www.culturegraph.org/metamorph">
+	<entry name="Aloha" value="Hawaii" />
+</map>
+```
+
+Use the {\tt include} tag from the {\tt http://www.w3.org/2001/XInclude}
+namespace to insert an external xml file into your definition. The included file
+must be valid xml itself, containig syntactically valid tags from the Metamorph
+namespace.
 
 _to come soon_
