@@ -7,13 +7,15 @@ The folder structure of the project follows the Maven standards. The extra folde
 
 # Logging
 We use the SLF4J framework and Log4j as a concrete logger. This means that in the code `org.slf4j.Logger` is used
+
 ```java
 private final static Logger LOG = LoggerFactory.getLogger(MyClass.class);
-``` 
+```
 
 # Exception Handling
-The idea is to bail out as soon a possible when an error occurs. Consequently rethrow checked but fatal exception as runtime exceptions. Do not forget to add the original exception as cause. Otherwise the stacktrace is lost. In particular do not catch exceptions just to print a stacktrace! Let the virtual machine handle the stacktrace. 
-Example: 
+
+The idea is to bail out as soon a possible when an error occurs. Consequently rethrow checked but fatal exception as runtime exceptions. Do not forget to add the original exception as cause. Otherwise the stacktrace is lost. In particular do not catch exceptions just to print a stacktrace! Let the virtual machine handle the stacktrace. Example: 
+
 ```java
 try{
 	???
@@ -21,6 +23,7 @@ try{
 	throw new DomainSpecificException("Explanation", originalException);
 }
 ```
+
 `DomainSpecificException` inherits from `RuntimeException`. 
 Throw `IllegalStateException`, `IllegalArgumentException`, etc. to indicate `null` pointers before they corrupt the system state. In performance critical parts use `assert` statements. They can be activated on demand with the VM switch `-ea`. 
 
@@ -44,15 +47,18 @@ There is also an eclipse plugin for Cobertura: [eCobertura](http://ecobertura.jo
 
 # Code Quality
 ## Naming Convention
-Please follow the official [Java Code Conventions](http://www.oracle.com/technetwork/java/codeconventions-150003.pdf). 
-Code Documentation
-Please document your code with JavaDocs. Especially leave a notice if code is experimental or not used. Also mention collaborating classes by adding @see and @link tags. 
-Raw Types
+Please follow the official [Java Code Conventions](http://www.oracle.com/technetwork/java/codeconventions-150003.pdf).
+
+## Code Documentation
+Please document your code with JavaDocs. Especially leave a notice if code is experimental or not used. Also mention collaborating classes by adding `@see` and `@link` tags. 
+
+##Raw Types
 Do not use raw types. If unsure how to correctly generify or restore type safety, leave the raw type warning unsuppressed and place a `TODO` marker. 
 
 ## Compiler Warnings
-Please avoid to commit code with compiler warnings. If warnings are unavoidable, suppress them with an annotation and add a short comment, why it is save to suppress it. If unsure about consequences add a `TODO` marker. 
-Static Code Analysis
+Please avoid to commit code with compiler warnings. If warnings are unavoidable, suppress them with an annotation and add a short comment, why it is save to suppress it. If unsure about consequences add a `TODO` marker.
+
+## Static Code Analysis
 Please do not commit code with FindBugs exceptions. The FindBugs plugin can be found at http://findbugs.cs.umd.edu/eclipse 
 
 Further plugins for code analysis: 
