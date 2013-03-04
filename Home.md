@@ -3,7 +3,7 @@ Metafacture is a tool suite for metadata processing.
 # Motivation
 
 # Architecture
-Metafacture comprises three main parts.
+Metafacture comprises three main parts: Framework, Morph and Flux. It can be extended with modules.
 
 ## Framework
 The framework includes the interfaces and abstract classes which form the foundation of the data processing pipelines. This part of Metafacture is only relevant for you if you plan to use Metafacture as a Java library or if you wish to add pipe elements to Flux.
