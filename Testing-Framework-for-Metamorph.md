@@ -55,7 +55,7 @@ though. In the case of Maven there is an straight forward remedy. Add the follow
 
 Here is an example test output in Eclipse:
 
-ADD IMAGE
+![screenshot](img/junit.png)
 
 The root
 element is the binding class. Its children are the XML files, with the actual
