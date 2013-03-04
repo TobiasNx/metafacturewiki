@@ -1,9 +1,5 @@
 This document provides an introduction to the Metafacture Morph language (short: Metamorph) for transforming metadata.
 
-# Running Metamorph
-
-# The Metamorph Definition
-
 The transformation a specific Metamoph instance performs are defined in a Metamorph definition in XML. The following code snippet shows the high level organization of a Metamorph definition. Its structure of the XML is constrained by the schema `metamorph.xsd`.
 
 ```xml
