@@ -1,4 +1,4 @@
-Welcome to the metafacture-core wiki!
+Metafacture is a tool suite for metadata processing.
 
 # Motivation
 
@@ -16,16 +16,23 @@ Metafacture Morph or short Metamorph is a domain specific language for metadata 
 The transformation itself is declared in XML. For more information on how to declare transformations see [[Metamorph Definition Language]].
 
 The development of Metamorph definitions are supported by a few tools/techniques:
-For more information on testing Metamorph definitions see [[Testing Metamorph Definitions]].
+For more information on testing Metamorph definitions see [[Testing Framework for Metamorph]].
 If you would like to visualize a definition as a data flow, see [[Visualizing Metamorph Definitions]].
 
-[[Morph User Guide]]
 
 ## Flux
-[[Flux User Guide]]
+
+Flux is a scripting language to easily build and run processing pipelines. No Java programming is necessary, just a command line. To use Flux you may download the binary distribution of Metafacture:
+_link to come soon_
+
+For more information on how to use Flux, see the [[Flux User Guide]].
 
 ## Modules
+
+Metafacture is extendable.
+
 
 # Developer's Corner
 
 * [[Discussion on Flux syntax]]
+* [[Code Quality and Style]]
