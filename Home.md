@@ -32,7 +32,8 @@ For more information on how to use Flux, see the [[Flux User Guide]].
 Metafacture is extendable.
 
 
-# Developer's Corner
+# Developer's Corner 
+Our status: ![build status](https://travis-ci.org/culturegraph/metafacture-core.png?branch=master)
 
 * [[Discussion on Flux syntax]]
 * [[Code Quality and Style]]
