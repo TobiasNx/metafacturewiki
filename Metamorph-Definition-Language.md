@@ -299,9 +299,9 @@ XInclude (http://www.w3.org/TR/xinclude/). The following snippet shows an exampl
 </map>
 ```
 
-Use the {\tt include} tag from the {\tt http://www.w3.org/2001/XInclude}
-namespace to insert an external xml file into your definition. The included file
-must be valid xml itself, containig syntactically valid tags from the Metamorph
+Use the `<include>` tag from the http://www.w3.org/2001/XInclude
+namespace to insert an external XML file into your definition. The included file
+must be valid xml itself, containing syntactically valid tags from the Metamorph
 namespace.
 
 _to come soon_
