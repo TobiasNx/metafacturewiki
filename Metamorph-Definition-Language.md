@@ -222,7 +222,7 @@ Metamorph definitions may contain parameters. They follow the pattern `$[NAME]`:
 </data>
 ```
 
-`\$[rights]` in this case is a compile-time variable which is evaluated on
+`$[rights]` in this case is a compile-time variable which is evaluated on
 creation of the respective Metamorph object.
 Thes variable in square brackets are not to be confused with the ones in curly
 brackets, which are evaluated at run-time.
