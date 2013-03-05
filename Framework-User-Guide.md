@@ -61,6 +61,7 @@ public interface StreamReceiver {
 	void startEntity(String name);
 	void endEntity();
 	void literal(String name, String value);
+}
 ```
 
 # Error Handling
