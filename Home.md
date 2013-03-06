@@ -33,7 +33,15 @@ Metafacture is extendable.
 
 # Download
 
-The core of Metafacture is available on [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.culturegraph%22).
+Metafacture-core is available on [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.culturegraph%22).
+To include in your software add the following dependency declaration to your `pom.xml`:
+```xml
+<dependency>
+    <groupId>org.culturegraph</groupId>
+    <artifactId>metafacture-core</artifactId>
+    <version>0.0.0</version>
+</dependency>
+```
 
 A binary distribution will be available for download soon.
 
