@@ -34,7 +34,7 @@ Metafacture is extendable.
 # Download
 
 Metafacture-core is released on [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.culturegraph%22).
-To include in your software add the following dependency declaration to your `pom.xml`:
+To include it in a java project, add the following dependency declaration to your `pom.xml`:
 ```xml
 <dependency>
     <groupId>org.culturegraph</groupId>
