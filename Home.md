@@ -31,6 +31,11 @@ For more information on how to use Flux, see the [[Flux User Guide]].
 
 Metafacture is extendable.
 
+# Download
+
+The core of Metafacture is available on [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.culturegraph%22).
+
+A binary distribution will be available for download soon.
 
 # Developer's Corner 
 Our status: ![build status](https://travis-ci.org/culturegraph/metafacture-core.png?branch=master)
