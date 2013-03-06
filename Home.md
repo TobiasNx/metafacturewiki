@@ -33,7 +33,7 @@ Metafacture is extendable.
 
 # Download
 
-Metafacture-core is available on [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.culturegraph%22).
+Metafacture-core is released on [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.culturegraph%22).
 To include in your software add the following dependency declaration to your `pom.xml`:
 ```xml
 <dependency>
@@ -42,6 +42,7 @@ To include in your software add the following dependency declaration to your `po
     <version>0.0.0</version>
 </dependency>
 ```
+Snapshot versions are available on [oss.sonatype.org](https://oss.sonatype.org/index.html#nexus-search;quick~culturegraph).
 
 A binary distribution will be available for download soon.
 
