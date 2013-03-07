@@ -32,6 +32,11 @@ Metafacture is extendable.
 
 # Download
 
+## As an Application
+
+A binary distribution will be available for download soon.
+
+## As Maven Dependency
 Metafacture-core is released on [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.culturegraph%22).
 To include it in a java project, add the following dependency declaration to your `pom.xml`:
 ```xml
@@ -43,7 +48,11 @@ To include it in a java project, add the following dependency declaration to you
 ```
 Snapshot versions are available on [oss.sonatype.org](https://oss.sonatype.org/index.html#nexus-search;quick~culturegraph).
 
-A binary distribution will be available for download soon.
+## As Source (Build your own)
+
+Clone the repository: https://github.com/culturegraph/metafacture-core/
+To build a distribution run `mvn clean package assembly:single`. You find the distribution as zip-file in the folder `target/`.
+
 
 # Developer's Corner 
 Our status: ![build status](https://travis-ci.org/culturegraph/metafacture-core.png?branch=master)
