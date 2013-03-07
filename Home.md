@@ -34,7 +34,7 @@ Metafacture is extendable.
 
 ## As an Application
 
-Download a snapshot of Version [1.0.0](http://culturegraph.github.com/distributions/metafacture-core/metafacture-core-1.0.0-SNAPSHOT-bin.zip), [signature](http://culturegraph.github.com/distributions/metafacture-core/metafacture-core-1.0.0-SNAPSHOT-bin.zip.sig). 
+Download a snapshot of version [1.0.0](http://culturegraph.github.com/distributions/metafacture-core/metafacture-core-1.0.0-SNAPSHOT-bin.zip), [signature](http://culturegraph.github.com/distributions/metafacture-core/metafacture-core-1.0.0-SNAPSHOT-bin.zip.sig). 
 
 _Stable release of 1.0.0 is comming soon_
 
