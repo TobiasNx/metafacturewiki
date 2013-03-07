@@ -34,7 +34,9 @@ Metafacture is extendable.
 
 ## As an Application
 
-A binary distribution will be available for download soon.
+Download a snapshot of Version [1.0.0](http://culturegraph.github.com/distributions/metafacture-core/metafacture-core-1.0.0-SNAPSHOT-bin.zip), [signature](http://culturegraph.github.com/distributions/metafacture-core/metafacture-core-1.0.0-SNAPSHOT-bin.zip.sig). 
+
+_Stable release of 1.0.0 is comming soon_
 
 ## As Maven Dependency
 Metafacture-core is released on [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.culturegraph%22).
