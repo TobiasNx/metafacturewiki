@@ -1,6 +1,5 @@
 Metafacture is a tool suite for metadata processing.
 
-# Motivation
 
 # Architecture
 Metafacture comprises three main parts: Framework, Morph and Flux. It can be extended with modules.
