@@ -52,12 +52,12 @@ Snapshot versions are available on [oss.sonatype.org](https://oss.sonatype.org/i
 
 ## As Source (Build your own)
 
-Clone the repository: https://github.com/culturegraph/metafacture-core/
-To build a distribution run `mvn clean package assembly:single`. You find the distribution as zip-file in the folder `target/`.
-
+Clone the repository: https://github.com/culturegraph/metafacture-core/.
+To build a distribution run `mvn clean package assembly:single`. 
 
 # Developer's Corner 
 Our status: ![build status](https://travis-ci.org/culturegraph/metafacture-core.png?branch=master)
 
 * [[Discussion on Flux syntax]]
 * [[Code Quality and Style]]
+* [Metafacture on Travis-CI.org](https://travis-ci.org/culturegraph/metafacture-core)
