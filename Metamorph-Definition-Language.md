@@ -1,9 +1,5 @@
 This document provides an introduction to the Metafacture Morph language (short: Metamorph) for transforming metadata.
 
-# Running Metamorph
-
-# The Metamorph Definition
-
 The transformation a specific Metamoph instance performs are defined in a Metamorph definition in XML. The following code snippet shows the high level organization of a Metamorph definition. Its structure of the XML is constrained by the schema `metamorph.xsd`.
 
 ```xml
@@ -56,7 +52,7 @@ First we eliminate all whitespaces by using a `<replace>` operation. Next we app
 
 Please note that functions may return zero to n values. If no value is returned, the processing is stopped and nothing will be sent downstream. If for instance a `<regexp>` does not match, processing stops and there will be no 'rdaGr2:dateOfDeath' in the output stream.
 
-For a list of available functions see [[Metamorph Functions]] or the xml schema `metamorph.xsd`.
+For a list of available functions see [[Metamorph Functions]] or the xml schema `metamorph.xsd`: https://github.com/culturegraph/metafacture-core/tree/master/src/main/resources/schema/metamorph.xsd.
 
 ## Looking up  Pieces of Data
 
@@ -80,7 +76,7 @@ Take for instance an operation in which you want to replace values according to 
 
 ### Maps
 
-The same lookup tables may used in different places in a Metamorph definition. To enable reuse, a map/dictionary can be defined separately from the respective lookup function. In the following listing the `<lookup>` function refers to the table using the name _material_. Later in the code the actual map is defined using the {\tt map} tag. See listing \ref{maps}.
+The same lookup tables may used in different places in a Metamorph definition. To enable reuse, a map/dictionary can be defined separately from the respective lookup function. In the following listing the `<lookup>` function refers to the table using the name _material_. Later in the code the actual map is defined using the `<map>` tag. See listing \ref{maps}.
 
 ```xml
 [...]
@@ -214,7 +210,7 @@ record end as output trigger.
 thus enforce combinations stemming from the same entities only. Note that the
 implementation only executes a reset if actually needed. Using `sameEntity="true"` has thus no negative impact on performance.
 
-For a list of all available collectors see [[Metamorph Collectors]]
+For a list of all available collectors see [[Metamorph Collectors]] or consult the `metamorph.xsd`: https://github.com/culturegraph/metafacture-core/tree/master/src/main/resources/schema/metamorph.xsd
 
 ## Parameters to Metamorph Definitions
 
@@ -226,7 +222,7 @@ Metamorph definitions may contain parameters. They follow the pattern `$[NAME]`:
 </data>
 ```
 
-`\$[rights]` in this case is a compile-time variable which is evaluated on
+`$[rights]` in this case is a compile-time variable which is evaluated on
 creation of the respective Metamorph object.
 Thes variable in square brackets are not to be confused with the ones in curly
 brackets, which are evaluated at run-time.
@@ -303,9 +299,7 @@ XInclude (http://www.w3.org/TR/xinclude/). The following snippet shows an exampl
 </map>
 ```
 
-Use the {\tt include} tag from the {\tt http://www.w3.org/2001/XInclude}
-namespace to insert an external xml file into your definition. The included file
-must be valid xml itself, containig syntactically valid tags from the Metamorph
+Use the `<include>` tag from the http://www.w3.org/2001/XInclude
+namespace to insert an external XML file into your definition. The included file
+must be valid xml itself, containing syntactically valid tags from the Metamorph
 namespace.
-
-_to come soon_
