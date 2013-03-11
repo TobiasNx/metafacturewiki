@@ -2,7 +2,7 @@ This document provides a quick introduction to Metafacture Flux, a domain specif
 
 # Installing Flux
 
-There are two options: either you check out the source code in your favorite IDE, or you unzip a distribution of Metafacture into a directory of your choice. A distribution can be downloaded here: culturegraph.github.com
+There are two options: either you check out the source code in your favorite IDE, or you unzip a distribution of Metafacture into a directory of your choice. A distribution can be downloaded here: http://culturegraph.github.com
 
 # Running Flux
 
