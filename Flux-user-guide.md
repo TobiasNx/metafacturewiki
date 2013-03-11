@@ -10,7 +10,7 @@ If you are working with the source code directly, execute the class `org.culture
 
 ## Getting Help and Inspiration
 1. If executed without arguments, Flux will display a short help text along with a list of all registered commands. 
-2. There are several example flux files along with sample data in the folder `examples/`.
+2. There are several example flux files along with sample data in the folder `examples/`: https://github.com/culturegraph/metafacture-core/tree/master/examples
 
 ## Run a Flux-File
 
