@@ -1,4 +1,4 @@
-![logo](img/metafacture_small.png)
+![logo](https://github.com/culturegraph/metafacture-core/wiki/img/metafacture_small.png)
 
 Metafacture is a tool suite for metadata processing. The name comes from _meta_ data and manu _facture_.
 
