@@ -7,8 +7,7 @@
 028@ ƒdFarid HamidƒaAbdellaouiƒlEl  
 
 The rule of metamorph is defined as:
-
-<combine name="${personalname}${surname}${forename}${prefix}${addition}" 
+'<combine name="${personalname}${surname}${forename}${prefix}${addition}" 
  value="##${pid}##,##${personalname}${surname}${forename}${prefix}${addition}##,##V##" 
  flushWith="028@" reset="true">
 	<data source="003@.0" name="pid"/>
@@ -21,7 +20,7 @@ The rule of metamorph is defined as:
 		<data source="028@.l"/>
 		<data source="028@.g"/>
 	</concat>
-</combine>
+</combine>'
 
 The following output is expected:
 ##1025201213##,##Abdellaoui, Farid Hamid##,##V##
