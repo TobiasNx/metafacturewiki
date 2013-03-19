@@ -1,4 +1,4 @@
-***Use recursion to avoid the value of a field to be reset***  
+##***Use recursion to avoid the value of a field to be reset***  
 4 lines of text should be extracted from a pica+ record which all begin with the $f-subfield of the 003@  and are followed by a combination of subfields in each 028@.   
 003@ ƒ01025201213  
 028@ ƒdFarīdƒcal-ƒaʿAbdalāwī  
