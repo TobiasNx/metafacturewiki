@@ -41,10 +41,10 @@ The reset=”true” option cleans the 003@ and 028@ before a new 028@ is read. 
 
 The solution is use of recursion (prefix @):
 
-&lt;combine name="@pid" value="${pid}" flushWith="028@" >
-	&lt;data source="003@.0" name="pid"/>
-&lt;/combine>
-   	
+&lt;combine name="@pid" value="${pid}" flushWith="028@" >  
+	&lt;data source="003@.0" name="pid"/>  
+&lt;/combine>  
+
 &lt;combine name="${personalname}${surname}${forename}${prefix}${addition}"  
 	value="##${pid}##,##${personalname}${surname}${forename}${prefix}${addition}##,##V##"  
 		flushWith="028@" reset="true">  
