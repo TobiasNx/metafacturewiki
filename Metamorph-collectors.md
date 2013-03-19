@@ -23,7 +23,7 @@ The standard behavior of `<combine>` can be controlled with several arguments:
 `sameEntity="true"` will reset the `<combine> `after each entity end and thus enforce combinations stemming from the same entities only. Note that the implementation only executes a reset if actually needed. Using `sameEntity="true"` has thus no negative impact on performance.
 
  
-#   Concatenate
+#   concat
 collects all received values and concatenates them on record end. `flushWith="name"`
 can be used to write the concatenation at the occurrence of any literal or entity _name_.
 
@@ -36,7 +36,7 @@ in: ("data1", "a"), ("data2", "b"), ("data2", "c"),("data1", "d"),
 out: ("concat", "{a,b,c,d}")
 ```
 
-#   Choose
+#   choose
 collects all received values and emits the most preferred one on record end.  Preference is
 assigned according to the order the data sources appear within the choose tag.  Eligible
 arguments are `sameEntity` and `flushWith`.
@@ -51,16 +51,16 @@ out: ("data", "a")
 ```
 if, however `("data1", "a")` was missing, the output would be `("data", "b")`.
 
-#   Group
+#   group
 Use it to set name, value or both only once for an entire group of data or collect (combine,
 choose, etc. ) tags.
 
-#    Tuples
+#    tuples
 collects literals from the enclosed sources and emits all possible combinations of them when
 flushed.  The `minN` option is used to set a minimum of different sources to be received.  If
 less than `minN` are received no tuples are emitted.
 
-# Square
+# square
 All unordered 2-tuples are constructed.
 ```xml
 in: ("data", "a"), ("data", "b"), ("data", "c")
