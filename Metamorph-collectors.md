@@ -41,6 +41,17 @@ collects literals from the enclosed sources and emits all possible combinations 
 flushed.  The `minN` option is used to set a minimum of different sources to be received.  If
 less than `minN` are received no tuples are emitted.
 
+# Square
+All unordered 2-tuples are constructed.
+```xml
+in: ("data", "a"), ("data", "b"), ("data", "c")
+<square delimiter="," name="square" prefix="{" postfix="}">
+   <data source="data" />
+</square>
+out: ("square", "{a,b}"), ("square", "{a,c}"),("square", "{b,c}")
+
+```
+
 #   Entity
 collects literals to rearrange them as an entity. Use the argument name to assign a name to
 the entity. Further arguments are `sameEntity`, `flushWith` and `reset`. Note that the `<entity>`
