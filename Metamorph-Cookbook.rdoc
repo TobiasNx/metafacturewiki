@@ -39,7 +39,7 @@ The reset=”true” option cleans the 003@ and 028@ before a new 028@ is read. 
 ##1025201213##,##El Abdellaoui, Farid Hamid al-##,##V##
 ##1025201213##,##ʿAbdalāwī, Farīd al-##,##V##
 
-The solution is using recursion (prefix @):
+The solution is use of recursion (prefix @):
 
 <combine name="@pid" value="${pid}" flushWith="028@" >
 	<data source="003@.0" name="pid"/>
