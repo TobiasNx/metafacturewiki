@@ -131,6 +131,22 @@ splitting based on a regexp.
 #    script and java
 processing the value with a JavaScript function or a Java class. See [[Integration of Java and JavaScript]].
 
+# switch-name-value
+Exchanges name and value.
+
+```xml
+in:      ("hamster","Rodriguez")("cat","Felix")  ...
+<switch-name-value/>
+out:   ("Rodriguez","hamster")("Felix","turtle")  ...
+```
+If you wish to set the name of the resulting named values, use the following code:
+```xml
+in:      ("hamster","Rodriguez")("cat","Felix")  ...
+<contant value="animal">
+<switch-name-value/>
+out:   ("animal","hamster")("animal","cat")  ...
+```
+
 #    normalize-utf8
 UTF-8 normalization. Brings Umlauts into canonical form.
 #    occurrence
