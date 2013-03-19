@@ -22,11 +22,11 @@ The rule of metamorph is defined as:
 </concat>
 </combine>
 
-The following output is expected:
-'##1025201213##,##Abdellaoui, Farid Hamid##,##V##
-##1025201213##,##Al-ʿAbdalāwī, Farīd##,##V##
-##1025201213##,##El Abdellaoui, Farid Hamid##,##V##
-##1025201213##,##ʿAbdalāwī, Farīd al-##,##V##'
+The following output is expected:  
+'##1025201213##,##Abdellaoui, Farid Hamid##,##V##'  
+'##1025201213##,##Al-ʿAbdalāwī, Farīd##,##V##'  
+'##1025201213##,##El Abdellaoui, Farid Hamid##,##V##'  
+'##1025201213##,##ʿAbdalāwī, Farīd al-##,##V##'  
 
 In fact output looks like this:
 ##1025201213##,##Abdellaoui, Farid Hamid##,##V##
