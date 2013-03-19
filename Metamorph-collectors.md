@@ -27,6 +27,15 @@ The standard behavior of `<combine>` can be controlled with several arguments:
 collects all received values and concatenates them on record end. `flushWith="name"`
 can be used to write the concatenation at the occurrence of any literal or entity _name_.
 
+```xml
+in: ("data1", "a"), ("data2", "b"), ("data2", "c"),("data1", "d"),
+<concat delimiter=", " name="concat" prefix="{" postfix="}">
+   <data source="data1" />
+   <data source="data2" />
+</concat>
+out: ("concat", "{a,b,c,d}")
+```
+
 #   Choose
 collects all received values and emits the most preferred one on record end.  Preference is
 assigned according to the order the data sources appear within the choose tag.  Eligible
