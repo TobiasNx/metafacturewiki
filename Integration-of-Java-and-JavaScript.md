@@ -8,7 +8,7 @@ You may use Java classes as function using the `<java>` tag:
 
 ```xml
 <data source="data">
-	<java class="org.culturegraph.metamorph.core.functions.Compose" prefix="Hula " />
+	<java class="org.culturegraph.mf.morph.functions.Compose" prefix="Hula " />
 </data>
 ```
 
