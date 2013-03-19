@@ -8,18 +8,18 @@
 
 The rule of metamorph is defined as:  
 &lt;combine name="${personalname}${surname}${forename}${prefix}${addition}"  
- value="##${pid}##,##${personalname}${surname}${forename}${prefix}${addition}##,##V##"  
- flushWith="028@" reset="true">  
-&lt;data source="003@.0" name="pid"/>  
-&lt;data source="028@.P" name="personalname" />  
-&lt;data source="028@.a" name="surname"/>  
-&lt;data source="028@.d" name="forename"/>  
-&lt;data source="028@.c" name="prefix"/>  
-&lt;concat name="addition" delimiter=", " flushWith="028A" reset="true" prefix=" ">  
-&lt;data source="028@.n"/>  
-&lt;data source="028@.l"/>  
-&lt;data source="028@.g"/>  
-&lt;/concat>  
+    value="##${pid}##,##${personalname}${surname}${forename}${prefix}${addition}##,##V##"  
+    flushWith="028@" reset="true">  
+    &lt;data source="003@.0" name="pid"/>  
+    &lt;data source="028@.P" name="personalname" />  
+    &lt;data source="028@.a" name="surname"/>  
+    &lt;data source="028@.d" name="forename"/>  
+    &lt;data source="028@.c" name="prefix"/>  
+    &lt;concat name="addition" delimiter=", " flushWith="028A" reset="true" prefix=" ">  
+        &lt;data source="028@.n"/>  
+        &lt;data source="028@.l"/>  
+        &lt;data source="028@.g"/>  
+    &lt;/concat>  
 &lt;/combine>  
 
 The following output is expected:  
