@@ -28,16 +28,16 @@ The following output is expected:
 '##1025201213##,##El Abdellaoui, Farid Hamid##,##V##'  
 '##1025201213##,##ʿAbdalāwī, Farīd al-##,##V##'  
 
-In fact output looks like this:
-##1025201213##,##Abdellaoui, Farid Hamid##,##V##
-####,##Al-ʿAbdalāwī, Farīd##,##V##
-####,##El Abdellaoui, Farid Hamid##,##V##
-####,##ʿAbdalāwī, Farīd al-##,##V##
+In fact output looks like this:  
+'##1025201213##,##Abdellaoui, Farid Hamid##,##V##'  
+'####,##Al-ʿAbdalāwī, Farīd##,##V##'  
+'####,##El Abdellaoui, Farid Hamid##,##V##'  
+'####,##ʿAbdalāwī, Farīd al-##,##V##'  
 The reset=”true” option cleans the 003@ and 028@ before a new 028@ is read. A new 003@ doesn’t exist and it is therefore empty. Neither reset=”false” can be used here, because it will remember the value of the old 028@, like the “al-“ at end of the following lines which in fact only appears in the first 028@ field.
-##1025201213##,##Abdellaoui, Farid Hamid al-##,##V##
-##1025201213##,##Al-ʿAbdalāwī, Farīd al-##,##V##
-##1025201213##,##El Abdellaoui, Farid Hamid al-##,##V##
-##1025201213##,##ʿAbdalāwī, Farīd al-##,##V##
+'##1025201213##,##Abdellaoui, Farid Hamid al-##,##V##'  
+'##1025201213##,##Al-ʿAbdalāwī, Farīd al-##,##V##'  
+'##1025201213##,##El Abdellaoui, Farid Hamid al-##,##V##'  
+'##1025201213##,##ʿAbdalāwī, Farīd al-##,##V##'  
 
 The solution is use of recursion (prefix @):
 
