@@ -1,4 +1,3 @@
-
 In case the predefined functions for data processing be not suffiecient, two
 choices to extend Metamorph scripts with customized code are at disposal: The
 first is to write a Java class. The second is to load a JavaScript file.
