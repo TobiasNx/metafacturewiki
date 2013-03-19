@@ -15,7 +15,7 @@ The rule of metamorph is defined as:
     &lt;data source="028@.a" name="surname"/>  
     &lt;data source="028@.d" name="forename"/>  
     &lt;data source="028@.c" name="prefix"/>  
-    &lt;concat name="addition" delimiter=", " flushWith="028A" reset="true" prefix=" ">  
+    &lt;concat name="addition" delimiter=", " flushWith="028@" reset="true" prefix=" ">  
         &lt;data source="028@.n"/>  
         &lt;data source="028@.l"/>  
         &lt;data source="028@.g"/>  
