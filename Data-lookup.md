@@ -1,5 +1,4 @@
 
-
 A certain group of functions takes a map/dictionary as argument: `<lookup>`, `<whitelist>`, `<blacklist>` etc.
 In this section the usage of such maps will be explained. We start with a simple example of data lookup.
 
@@ -20,7 +19,7 @@ Take for instance an operation in which you want to replace values according to 
 
 # Maps
 
-The same lookup tables may used in different places in a Metamorph definition. To enable reuse, a map/dictionary can be defined separately from the respective lookup function. In the following listing the `<lookup>` function refers to the table using the name _material_. Later in the code the actual map is defined using the `<map>` tag. See listing \ref{maps}.
+The same lookup tables may used in different places in a Metamorph definition. To enable reuse, a map/dictionary can be defined separately from the respective lookup function. In the following listing the `<lookup>` function refers to the table using the name _material_. Later in the code the actual map is defined using the `<map>` tag.
 
 ```xml
 [...]
