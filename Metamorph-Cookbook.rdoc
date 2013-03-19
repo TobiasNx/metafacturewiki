@@ -7,6 +7,7 @@ Use recursion to avoid the value of a field to be reset.
 028@ ƒdFarid HamidƒaAbdellaouiƒlEl
 
 The rule of metamorph is defined as:
+
 <combine name="${personalname}${surname}${forename}${prefix}${addition}" value="##${pid}##,##${personalname}${surname}${forename}${prefix}${addition}##,##V##" flushWith="028@" reset="true">
 	<data source="003@.0" name="pid"/>
 	<data source="028@.P" name="personalname" />
