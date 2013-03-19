@@ -6,21 +6,21 @@
 028@ ƒdFarid HamidƒaEl Abdellaouiƒ4nawi  
 028@ ƒdFarid HamidƒaAbdellaouiƒlEl  
 
-The rule of metamorph is defined as:
+The rule of metamorph is defined as:  
 <combine name="${personalname}${surname}${forename}${prefix}${addition}" 
  value="##${pid}##,##${personalname}${surname}${forename}${prefix}${addition}##,##V##" 
  flushWith="028@" reset="true">
-	<data source="003@.0" name="pid"/>
-	<data source="028@.P" name="personalname" />
-   	<data source="028@.a" name="surname"/>
-	<data source="028@.d" name="forename"/>
-	<data source="028@.c" name="prefix"/>
-	<concat name="addition" delimiter=", " flushWith="028A" reset="true" prefix=" ">
-		<data source="028@.n"/>
-		<data source="028@.l"/>
-		<data source="028@.g"/>
-	</concat>
-</combine>'
+<data source="003@.0" name="pid"/>
+<data source="028@.P" name="personalname" />
+<data source="028@.a" name="surname"/>
+<data source="028@.d" name="forename"/>
+<data source="028@.c" name="prefix"/>
+<concat name="addition" delimiter=", " flushWith="028A" reset="true" prefix=" ">
+<data source="028@.n"/>
+<data source="028@.l"/>
+<data source="028@.g"/>
+</concat>
+</combine>
 
 The following output is expected:
 '##1025201213##,##Abdellaoui, Farid Hamid##,##V##
