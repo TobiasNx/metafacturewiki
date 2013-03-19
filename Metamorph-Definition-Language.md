@@ -55,8 +55,8 @@ Please note that functions may return zero to n values. If no value is returned,
 For a list of available functions see [[Metamorph Functions]] or the xml schema `metamorph.xsd`: https://github.com/culturegraph/metafacture-core/tree/master/src/main/resources/schema/metamorph.xsd.
 
 Read more:
-* [Data Lookup]
-* [Integration of Java&JavaScript]
+* [[Data Lookup]]
+* [[Integration of Java&JavaScript]]
 
 ## Integration of customized code
 
