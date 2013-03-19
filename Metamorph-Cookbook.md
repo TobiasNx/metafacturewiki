@@ -7,20 +7,20 @@
 028@ ƒdFarid HamidƒaAbdellaouiƒlEl  
 
 The rule of metamorph is defined as:  
-'<combine name="${personalname}${surname}${forename}${prefix}${addition}" 
+'&lt;combine name="${personalname}${surname}${forename}${prefix}${addition}" 
  value="##${pid}##,##${personalname}${surname}${forename}${prefix}${addition}##,##V##" 
- flushWith="028@" reset="true">
-<data source="003@.0" name="pid"/>
-<data source="028@.P" name="personalname" />
-<data source="028@.a" name="surname"/>
-<data source="028@.d" name="forename"/>
-<data source="028@.c" name="prefix"/>
-<concat name="addition" delimiter=", " flushWith="028A" reset="true" prefix=" ">
-<data source="028@.n"/>
-<data source="028@.l"/>
-<data source="028@.g"/>
-</concat>
-</combine>'
+ flushWith="028@" reset="true"&gt;
+&lt;data source="003@.0" name="pid"/>
+&lt;data source="028@.P" name="personalname" />
+&lt;data source="028@.a" name="surname"/>
+&lt;data source="028@.d" name="forename"/>
+&lt;data source="028@.c" name="prefix"/>
+&lt;concat name="addition" delimiter=", " flushWith="028A" reset="true" prefix=" ">
+&lt;data source="028@.n"/>
+&lt;data source="028@.l"/>
+&lt;data source="028@.g"/>
+&lt;/concat>
+&lt;/combine>'
 
 The following output is expected:  
 '##1025201213##,##Abdellaoui, Farid Hamid##,##V##'  
