@@ -60,5 +60,5 @@ The solution is use of recursion (prefix @):
 	&lt;/concat>  
 &lt;/combine>  
 
-The first <combine> element use the name “@pid” to declare a redirecting the value return to the input stream and it is done for each new 028@. The second <combine> element uses the redirected, but not reset value of 003@ to combine the new 028@ value which are reset. 
+The first &lt;combine> element use the name “@pid” to declare a redirecting the value return to the input stream and it is done for each new 028@. The second &lt;combine> element uses the redirected, but not reset value of 003@ to combine the new 028@ value which are reset. 
 
