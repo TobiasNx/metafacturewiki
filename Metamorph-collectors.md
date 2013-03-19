@@ -41,6 +41,16 @@ collects all received values and emits the most preferred one on record end.  Pr
 assigned according to the order the data sources appear within the choose tag.  Eligible
 arguments are `sameEntity` and `flushWith`.
 
+```xml
+in: ("data1", "a"), ("data2", "b")
+<choose name="data">
+   <data source="data1" />
+   <data source="data2" />
+</choose>
+out: ("data", "a")
+```
+if, however `("data1", "a")` was missing, the output would be `("data", "b")`.
+
 #   Group
 Use it to set name, value or both only once for an entire group of data or collect (combine,
 choose, etc. ) tags.
