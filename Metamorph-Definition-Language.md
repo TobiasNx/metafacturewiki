@@ -87,43 +87,10 @@ forgetting to rename the data (removing the '@') in the final processing step.
 In the case that an output depends on the values from more then one literal, we
 need to collect literals. Collectors are defined under the `<rules>` tag, just
 as `<data>` tags. `<data>` tags are be put inside the respective collectors
-to indicate which literals are to be collected. The following paragraphs briefly
-introduce the different collectors available. Note that all types of collectors
-except `<entity>` can be nested. To all types of collectors post-processing steps can be added
-by using the `<postprocess>` tag.
+to indicate which literals are to be collected. 
 
-
-`<combine>` for instance is used to build one output literal from a
-combination of input literals. The following example  for
-instance collects the sur- and forename which are stored in separate literals to
-combine them according to the pattern 'surname, forename'.
-
-```xml
-<combine name="gnd:variantNameForThePerson" value="${surname}, ${forename}">
-  <data source="028A.a" name="surname" />
-  <data source="028A.d" name="forename"/>
-</combine>
-```
-
-There are several important points to note: By default `<combine>` waits until
-at least one value from each `<data>` tag is received. If the collection is
-not complete on record end, no output is generated. After each output, the state
-of `<combine>` is reset. If one `<data>` tag receives literals repeatedly
-before the collection is complete only the last value will be retained.
-
-
-
-The standard behavior of `<combine>` can be controlled with several arguments:
-`flushOn= "entityname"` generates output on the end of each entity with name
-_entityname_. Variables in the output pattern which are not yet bound to a
-value, are replaced with the empty string. Use `flushOn="record"` to set the
-record end as output trigger.
-`reset="false"` disables the reset after output.
-`sameEntity="true"` will reset the `<combine>` after each entity end and
-thus enforce combinations stemming from the same entities only. Note that the
-implementation only executes a reset if actually needed. Using `sameEntity="true"` has thus no negative impact on performance.
-
-For a list of all available collectors see [[Metamorph Collectors]] or consult the `metamorph.xsd`: https://github.com/culturegraph/metafacture-core/tree/master/src/main/resources/schema/metamorph.xsd
+Read more:
+* [[Metamorph Collectors]] 
 
 ## Parameters to Metamorph Definitions
 
