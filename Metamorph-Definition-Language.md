@@ -56,7 +56,7 @@ For a list of available functions see [[Metamorph Functions]] or the xml schema 
 
 Read more:
 * [[Data Lookup]]
-* [[Integration of Java&JavaScript]]
+* [[Integration of Java and JavaScript]]
 
 
 
