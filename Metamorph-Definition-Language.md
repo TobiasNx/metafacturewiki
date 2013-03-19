@@ -52,9 +52,8 @@ First we eliminate all whitespaces by using a `<replace>` operation. Next we app
 
 Please note that functions may return zero to n values. If no value is returned, the processing is stopped and nothing will be sent downstream. If for instance a `<regexp>` does not match, processing stops and there will be no 'rdaGr2:dateOfDeath' in the output stream.
 
-For a list of available functions see [[Metamorph Functions]] or the xml schema `metamorph.xsd`: https://github.com/culturegraph/metafacture-core/tree/master/src/main/resources/schema/metamorph.xsd.
-
 Read more:
+* [[Metamorph Functions]]
 * [[Data Lookup]]
 * [[Integration of Java and JavaScript]]
 
