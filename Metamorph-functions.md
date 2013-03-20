@@ -1,5 +1,9 @@
 Functions take as input name-value pairs, subsequently written as `(name,  value)`
 and output zero to n name-value pairs.
+
+See also:
+* [[Metamorph Cookbook]]
+
 # compose
 Wraps the value in a prefix and postfix.
 ```xml
