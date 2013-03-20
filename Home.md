@@ -22,8 +22,7 @@ If you would like to visualize a definition as a data flow, see [[Visualizing Me
 
 ## Flux
 
-Flux is a scripting language to easily build and run processing pipelines. No Java programming is necessary, just a command line. To use Flux you may download the binary distribution of Metafacture:
-_link to come soon_
+Flux is a scripting language to easily build and run processing pipelines. No Java programming is necessary, just a command line. To use Flux you may download the binary distribution of Metafacture.
 
 For more information on how to use Flux, see the [[Flux User Guide]].
 
