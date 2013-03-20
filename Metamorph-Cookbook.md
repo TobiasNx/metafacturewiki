@@ -76,6 +76,3 @@ The id is re-emitted for every entity '028@'. The `reset=false` in the inner `<c
 
 # Open Problems
 
-
-
-The first `<combine>` element use the name “@pid” to declare a redirecting the value return to the input stream and it is done for each new 028@. The second `<combine>` element uses the redirected, but not reset value of 003@ to combine the new 028@ values which are reset before read.
