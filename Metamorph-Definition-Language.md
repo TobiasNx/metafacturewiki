@@ -56,6 +56,7 @@ Read more:
 * [[Metamorph Functions]]
 * [[Data Lookup]]
 * [[Integration of Java and JavaScript]]
+* [[Metamorph Cookbook]]
 
 
 
@@ -89,7 +90,8 @@ as `<data>` tags. `<data>` tags are be put inside the respective collectors
 to indicate which literals are to be collected. 
 
 Read more:
-* [[Metamorph Collectors]] 
+* [[Metamorph Collectors]]
+* [[Metamorph Cookbook]]
 
 ## Parameters to Metamorph Definitions
 
