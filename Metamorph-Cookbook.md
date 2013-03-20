@@ -33,7 +33,7 @@ If A happens only once and before Bs:
 ```xml
 <combine name="" value="${a}" reset="false">
    <data source="A" name="a"/>
-   <data source="B" name=""/>
+   <data source="B"/>
 </combine>
 ```
 Note that `reset` is set to `false` in order to retain the value of A.
