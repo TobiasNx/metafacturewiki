@@ -1,5 +1,9 @@
 Please add recipes under 'Solutions'. If you have a problem in need of a solution, please add it under 'Open Problems'.
 
+See also
+* [[Metamorph functions]]
+* [[Metamorph collectors]]
+
 # Solutions
 
 The following sections present solutions to common problems.
@@ -75,4 +79,3 @@ The id is re-emitted for every entity '028@'. The `reset=false` in the inner `<c
 
 
 # Open Problems
-
