@@ -2,9 +2,9 @@ In the case that an output depends on the values from more then one literal, we 
 Collectors are defined under the <rules> tag, just as <data> tags. <data> tags are be put inside the respective collectors to indicate which literals are to be collected. The following paragraphs briefly introduce the different collectors available. Note that all types of collectors except <entity> can be nested. To all types of collectors post-processing steps can be added by using the `<postprocess>` tag.
 
 For more information, see:
-* the [[Metamorph Cookbook]]
-* the test-cases (https://github.com/culturegraph/metafacture-core/tree/master/src/test/java/org/culturegraph/mf/morph/collectors)
-* the Metamorph schema (https://github.com/culturegraph/metafacture-core/tree/master/src/main/resources/schema/metamorph.xsd).
+* [[Metamorph Cookbook]]
+* test-cases (https://github.com/culturegraph/metafacture-core/tree/master/src/test/java/org/culturegraph/mf/morph/collectors)
+* Metamorph schema (https://github.com/culturegraph/metafacture-core/tree/master/src/main/resources/schema/metamorph.xsd).
 
 #combine
 
