@@ -1,3 +1,33 @@
+Please add recipes under 'Solutions'. If you have a problem in need of a solution, please add it under 'Open Problems'.
+
+# Solutions
+
+The following sections present solutions to common problems.
+
+## Emitting value of A whenever B occurs
+
+If A happens only once and before Bs:
+
+```xml
+<combine name="" value="${a}" reset="false">
+   <data source="A" name="a"/>
+   <data source="B" name=""/>
+</combine>
+```
+
+if A happens only once but after Bs, the Bs must be delayed by buffering them:
+```xml
+<combine name="" value="${a}" reset="false">
+   <data source="A" name="a"/>
+   <data source="B" name="">
+      <buffer/>   
+   </data>
+</combine>
+```
+
+
+# Open Problems
+
 ## Use recursion to avoid the value of a field to be reset
 
 Four lines of text should be extracted from a pica+ record which all begin with the $f-subfield of the 003@  and are followed by a combination of subfields in each 028@.
