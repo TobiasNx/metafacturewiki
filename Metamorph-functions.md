@@ -3,7 +3,7 @@ and output zero to n name-value pairs.
 
 For more information, see also:
 * [[Metamorph Cookbook]]
-* test-cases (https://github.com/culturegraph/metafacture-core/tree/master/src/test/java/org/culturegraph/mf/morph/collectors)
+* test-cases (https://github.com/culturegraph/metafacture-core/tree/master/src/test/java/org/culturegraph/mf/morph/functions)
 * Metamorph schema (https://github.com/culturegraph/metafacture-core/tree/master/src/main/resources/schema/metamorph.xsd).
 
 # compose
