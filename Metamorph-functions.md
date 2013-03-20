@@ -1,8 +1,10 @@
 Functions take as input name-value pairs, subsequently written as `(name,  value)`
 and output zero to n name-value pairs.
 
-See also:
+For more information, see also:
 * [[Metamorph Cookbook]]
+* test-cases (https://github.com/culturegraph/metafacture-core/tree/master/src/test/java/org/culturegraph/mf/morph/collectors)
+* Metamorph schema (https://github.com/culturegraph/metafacture-core/tree/master/src/main/resources/schema/metamorph.xsd).
 
 # compose
 Wraps the value in a prefix and postfix.
