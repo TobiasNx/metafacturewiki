@@ -42,7 +42,7 @@ If A happens only once but after Bs, the Bs must be delayed by buffering them:
 ```xml
 <combine name="" value="${a}" reset="false">
    <data source="A" name="a"/>
-   <data source="B" name="">
+   <data source="B">
       <buffer/>   
    </data>
 </combine>
