@@ -11,7 +11,7 @@ Use `<choose>` to give preference to A. Add a data source for '_id' as fallback 
 <choose name="out">
    <data source="A"/>
    <data source="_id">
-      <constant value="x">
+      <constant value="x"/>
    </data>
 </combine>
 ```
@@ -20,7 +20,7 @@ A variation is to emit for every entity E the value of A if A occurs, but 'x' if
 <choose name="out" flushWith="E">
    <data source="E.A"/>
    <data source="E">
-      <constant value="x">
+      <constant value="x"/>
    </data>
 </combine>
 ```
