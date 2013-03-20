@@ -49,7 +49,7 @@ The situation might arise that the data cannot be hard-coded in xml/text etc; or
 To address this issue, Metamorph allows you to load any class which implements the `Map` interface.
 
 ```xml
-<javamap name="map-name" class="org.myorginzation.MyMap" parameter1="xy" />
+<javamap name="map-name" class="org.mydomain.MyMap" parameter1="xy" />
 ```
 
 `Map`s can also be added to Metamorph problematically in Java:
