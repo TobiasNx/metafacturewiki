@@ -36,9 +36,7 @@ Metafacture is extendable.
 
 ## As an Application
 
-Download a snapshot of version 1.0.0: [zip](http://culturegraph.github.com/distributions/metafacture-core/metafacture-core-1.0.0-SNAPSHOT-bin.zip), [signature](http://culturegraph.github.com/distributions/metafacture-core/metafacture-core-1.0.0-SNAPSHOT-bin.zip.sig). 
-
-_Stable release of 1.0.0 is comming soon_
+Download version 1.0.0: [zip](http://culturegraph.github.com/distributions/metafacture-core/metafacture-core-1.0.0-bin.zip), [signature](http://culturegraph.github.com/distributions/metafacture-core/metafacture-core-1.0.0-bin.zip.sig). 
 
 ## As Maven Dependency
 Metafacture-core is released on [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.culturegraph%22).
@@ -47,7 +45,7 @@ To include it in a java project, add the following dependency declaration to you
 <dependency>
     <groupId>org.culturegraph</groupId>
     <artifactId>metafacture-core</artifactId>
-    <version>0.0.0</version>
+    <version>1.0.0</version>
 </dependency>
 ```
 Snapshot versions are available on [oss.sonatype.org](https://oss.sonatype.org/index.html#nexus-search;quick~culturegraph).
