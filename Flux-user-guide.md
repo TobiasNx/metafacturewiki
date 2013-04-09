@@ -15,13 +15,13 @@ If you are working with the source code directly, execute the class `org.culture
 Just provide the flux file you wish to run as first argument.
 
 ```bash
-flux.sh FILE.flux
+$> flux.sh FILE.flux
 ```
 
 ## Provide Arguments
 To provide arguments add variable assignments after the first argument as follows:
 ```bash
-flux.sh FILE.flux var1=value1 var2=value2
+$> flux.sh FILE.flux var1=value1 var2=value2
 ```
 This sets the variable `var1` to the value 'value1' and `var2` to the value 'value2'.
 
