@@ -60,7 +60,7 @@ The syntax for defining flows takes its cues from bash pipes. Commands are conca
 
 Some commands take a constructor argument. It is provided within brackets: `command("arg")`.
 Furthermore, some commands have named options. These are set as follows `command(optionname="arg1",annotheroption="arg2")` or with constructor argument: `command("arg",option="arg2")`.
-To learn about the available options of a command, execute Flux without commands: It will list all available commands, including options.
+To learn about the available options of a command, execute Flux without arguments: It will list all available commands, including options.
 
 To some commands, the entire environment can be given as argument. This is done with the `*` character: `morph("morphdef.xml", *)`. In this case Metamorph gains access to all variable assignments made in Flux.
 (See also [[Metamorph-Definition-Language#parameters-to-metamorph-definitions]]).
