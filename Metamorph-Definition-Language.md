@@ -1,6 +1,6 @@
-This document provides an introduction to the Metafacture Morph language (short: Metamorph) for transforming metadata.
+This document provides an introduction to the Metafacture Morph language (short: Metamorph). Metamorph is a declarative flow oriented language which allows to define transformations of arbitrary metadata/semi-structured data in XML.
 
-The transformation a specific Metamoph instance performs are defined in a Metamorph definition in XML. The following code snippet shows the high level organization of a Metamorph definition. Its structure of the XML is constrained by the schema `metamorph.xsd`.
+The following code snippet shows the high level organization of a Metamorph definition. See also the schema:  [[https://github.com/culturegraph/metafacture-core/blob/master/src/main/resources/schemata/metamorph.xsd]].
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -16,7 +16,7 @@ The transformation a specific Metamoph instance performs are defined in a Metamo
 ```
  
 
-The root element `<metamorph>` has two attributes: One indicates the Metamorph version the document it intended to work with, the second indicates the character used to separate entity names. Within the `<metamorph>` tag there are four sections.
+The root element `<metamorph>` has two attributes: One indicates the Metamorph version the document is intended to work with; the second indicates the character used to separate entity names. Within the `<metamorph>` tag there are four sections:
 The first and optional one holds metadata for the definition file. The second section -- also optional -- holds definition of macros.
 The `<rules>` block defines the actual transformation rules. 
 Finally the optional `maps` block allows to define maps/dictionaries for lookup functionality.
