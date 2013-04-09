@@ -41,17 +41,24 @@ encode("literals")|
 write("stdout");
 ```
 In the first section variables are declared, in the second, we define the flow.
+Linebreaks are optional. Semicolons `;` mark the end of a variable assignment or flow definition. 
 
 ##Variables
-Variables are always Strings and can be concatenated with the `+` operator. 
+Variables are always Strings and can be concatenated with the `+` operator. Escape sequences follow the Java String conventions: `\n`=line break, `\t`=tab, `\\`=\, `\u0024`=unicode character, etc.
+
 The `default` keyword tells Flux to assign the respective value _only_ if the variable has 
 not yet been set on the command line. Without `default`, previous assignments will be overwritten.
 
 Paths are always relative to the directory within which the flux command is executed. To address files relative to the location of the executed flux file, use the predefined `FLUX_DIR` variable.
 
+##Comments
+Flux supports single line C/Java-style comments: `//comment`.
+
 ##Flow
 
-The syntax for defining flows takes its cues from bash pipes. Commands are concatenated with the pipe character `|`. Some commands take a constructor argument. It is provided within brackets: `command("arg")`.
+The syntax for defining flows takes its cues from bash pipes. Commands are concatenated with the pipe character `|`. 
+
+Some commands take a constructor argument. It is provided within brackets: `command("arg")`.
 Furthermore, some commands have named options. These are set as follows `command(optionname="arg1",annotheroption="arg2")` or with constructor argument: `command("arg",option="arg2")`.
 To learn about the available options of a command, execute Flux without commands: It will list all available commands, including options.
 
