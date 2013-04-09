@@ -54,7 +54,7 @@ Paths are always relative to the directory within which the flux command is exec
 ##Comments
 Flux supports single line C/Java-style comments: `//comment`.
 
-##Flow
+##Flow Definitions
 
 The syntax for defining flows takes its cues from bash pipes. Commands are concatenated with the pipe character `|`. 
 
