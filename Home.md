@@ -30,7 +30,7 @@ For more information on how to use Flux, see the [[Flux User Guide]].
 
 ## Modules
 
-Metafacture is extendable.
+Metafacture is extendable. For modules see [[http://culturegraph.github.com]].
 
 # Download
 
