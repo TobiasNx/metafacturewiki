@@ -17,7 +17,7 @@ Use `<choose>` to give preference to A. Add a data source for '_id' as fallback 
    <data source="_id">
       <constant value="x"/>
    </data>
-</combine>
+</choose>
 ```
 A variation is to emit for every entity E the value of A if A occurs, but 'x' if A is missing in E:
 ```xml
@@ -26,7 +26,7 @@ A variation is to emit for every entity E the value of A if A occurs, but 'x' if
    <data source="E">
       <constant value="x"/>
    </data>
-</combine>
+</choose>
 ```
 In this case the fallback is E. Note that `<choose>` needs to be flushed with every occurrence of E.
 
