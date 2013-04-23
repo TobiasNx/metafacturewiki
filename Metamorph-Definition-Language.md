@@ -83,7 +83,7 @@ preprocessing only once. Be careful though not to build infinite loops by
 forgetting to rename the data (removing the '@') in the final processing step.
 
 ```xml
-<!--  infinite loop: the missing name causses the literal to be again emitted as @format-->
+<!--  infinite loop: the missing name causes the literal to be again emitted as @format-->
 <data source="@format">
 ```
 
