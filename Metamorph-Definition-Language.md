@@ -82,6 +82,11 @@ preprocessing steps. It also improves efficiency as Metamorph will perform the
 preprocessing only once. Be careful though not to build infinite loops by
 forgetting to rename the data (removing the '@') in the final processing step.
 
+```xml
+<!--  infinite loop: the missing name causses the literal to be again emitted as @format-->
+<data source="@format">
+```
+
 ## Collecting Pieces of Data
 
 In the case that an output depends on the values from more then one literal, we
