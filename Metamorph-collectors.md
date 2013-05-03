@@ -19,7 +19,7 @@ There are several important points to note: By default <combine> waits until at 
 
 The standard behavior of `<combine>` can be controlled with several arguments: 
 ## flushWith
-`flushWith= "name"` generates output on the occurrence of any literal or entity with _name_. Variables in the output pattern which are not yet bound to a value, are replaced with the empty string. Use `flushOn="record"` to set the record end as output trigger. 
+`flushWith= "name"` generates output on the occurrence of any literal or entity with _name_. Variables in the output pattern which are not yet bound to a value, are replaced with the empty string. Use `flushWith="record"` to set the record end as output trigger. 
 ##reset
 `reset="false"` disables the reset after output. 
 ##sameEntity
