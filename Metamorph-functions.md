@@ -134,6 +134,13 @@ out:   ("a","hamster")("b","turtle")  ...
 #    split
 splitting based on a regexp.
 
+```xml
+in:      ("data","Oahu,Hawaii,Maui")  ...
+<split delimiter=","/>
+out:   ("data","Oahu")("data","Hawaii")("data","Maui")  ...
+```
+
+
 #    script and java
 processing the value with a JavaScript function or a Java class. See [[Integration of Java and JavaScript]].
 
