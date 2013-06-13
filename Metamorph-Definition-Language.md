@@ -153,6 +153,8 @@ of the tag are used as parameters:
 </rules>
 ```
 
+In this case `literal_name` serves as a parameter (the name is arbitrary). In the macro definition itsel, the parameter is addressed by `$[literal_name]`. 
+
 Parameters are scoped, which means that the ones provided with the `call-macro` tag shadow global ones. Macros cannot be nested.
 
 
