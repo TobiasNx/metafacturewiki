@@ -6,3 +6,4 @@
 * Herzog August Bibliothek Wolfenbüttel (https://github.com/dmj)
   - maintain a PICA-based search index (beta)
   - various ad-hoc transformations ("Metafacture -- The XSL for PICA")
+* [regal - repository project for edoweb](https://github.com/edoweb/regal/wiki), developed at hbz and lbz
