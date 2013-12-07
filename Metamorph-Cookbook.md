@@ -52,6 +52,24 @@ If A happens only once but after Bs, the Bs must be delayed by buffering them:
 </combine>
 ```
 
+## Emitting value of A whenever B *not* occurs
+```xml
+<combine name="" value="${a}" reset="false">
+   <data source="A" name="a"/>
+   <choose>
+      <data source="B">
+         <constant value="FOUND" />
+      </data>
+      <data source="_id">
+         <constant value="NOTFOUND" />
+      </data>
+      <postprocess>
+         <equals string="NOTFOUND" />
+      </postprocess>
+   </choose>
+</combine>
+```
+
 ## Avoid reset of a single value in a collector
 
 This is a variation of 'Emitting value of A whenever B occurs'.
