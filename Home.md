@@ -28,27 +28,6 @@ Flux is a scripting language to easily build and run processing pipelines. No Ja
 
 For more information on how to use Flux, see the [[Flux User Guide]].
 
-## Modules
-
-Metafacture is extendable. For modules see [[http://culturegraph.github.com]].
-
-## Use as Maven Dependency
-Metafacture-core is released on [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.culturegraph%22).
-To include it in a java project, add the following dependency declaration to your `pom.xml`:
-```xml
-<dependency>
-    <groupId>org.culturegraph</groupId>
-    <artifactId>metafacture-core</artifactId>
-    <version>1.0.0</version>
-</dependency>
-```
-Snapshot versions are available on [oss.sonatype.org](https://oss.sonatype.org/index.html#nexus-search;quick~culturegraph).
-
-## As Source (Build your own)
-
-Clone the repository: https://github.com/culturegraph/metafacture-core/.
-To build a distribution run `mvn clean package assembly:single`. 
-
 # Developer's Corner 
 Our status: ![build status](https://travis-ci.org/culturegraph/metafacture-core.png?branch=master)
 
