@@ -10,7 +10,7 @@ For more information see the [[Framework User Guide]].
 # Morph
 Metafacture Morph or short Metamorph is a domain specific language for metadata transformation. The Metamorph object performing the transformation is used as part of a processing pipeline. If you are using Metafacture as a Java library, just create a `Metamorph` object and add it to your pipeline (see also the [[Framework User Guide]]). If you are using the Flux scripting language to build and run pipelines, use the `morph` command. 
 
-The transformation itself is declared in XML. For more information on how to declare transformations see [[Metamorph Definition Language]].
+The transformation itself is declared in XML. For more information on how to declare transformations see [[Metamorph User Guide]].
 
 The development of Metamorph definitions are supported by a few tools/techniques:
 For more information on testing Metamorph definitions see [[Testing Framework for Metamorph]].
