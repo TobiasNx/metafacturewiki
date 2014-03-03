@@ -32,13 +32,7 @@ For more information on how to use Flux, see the [[Flux User Guide]].
 
 Metafacture is extendable. For modules see [[http://culturegraph.github.com]].
 
-# Download
-
-## As an Application
-
-Download version 1.0.0: [zip](http://culturegraph.github.com/distributions/metafacture-core/metafacture-core-1.0.0-bin.zip), [signature](http://culturegraph.github.com/distributions/metafacture-core/metafacture-core-1.0.0-bin.zip.sig). 
-
-## As Maven Dependency
+## Use as Maven Dependency
 Metafacture-core is released on [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.culturegraph%22).
 To include it in a java project, add the following dependency declaration to your `pom.xml`:
 ```xml
