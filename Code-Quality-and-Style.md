@@ -1,11 +1,12 @@
 This document outlines standards of code quality and code style which we would like to uphold in the Metafacture project.
 
-
 # Build Environment
-We currently use Maven 3.0.4. For a full build call the `package` goal. To build a binary distribution call `mvn clean install`. See `/pom.xml` for the build configuration. All build related issues are to be handled by Maven and Maven only (No extra ant etc.). 
+
+We currently use Maven 3.0.4. For a full build call the `package` goal. See `/pom.xml` for the build configuration. All build related issues are to be handled by Maven and Maven only (No extra ant etc.). 
 The folder structure of the project follows the Maven standards. The extra folder `/quality_assurance`  contains rule sets for static code analysis.
 
 # Logging
+
 We use the SLF4J framework and do not include a concrete logger.. This means that in the code `org.slf4j.Logger` is used
 
 ```java
