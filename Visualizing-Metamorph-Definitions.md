@@ -1,3 +1,10 @@
+
+***
+**Please note: The information on this page is not up-to-date.**
+
+The MorphVis class has been moved to the metafacture-runner package. This package needs to be updated to reflect this.
+***
+
 The processing model behind Metamorph is that of a data flow. Hence it is
 straight forward to visualize Metamorph as a directed network, representing the
 respective flow. Here is a modest example:
