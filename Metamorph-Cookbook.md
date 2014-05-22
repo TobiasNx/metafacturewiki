@@ -9,6 +9,9 @@ See also
 The following sections present solutions to common problems.
 
 ## Emitting value of A if A occurs, but 'x' if A is missing
+
+**Please note that this example is outdated:** As of Metafacture version 1.2.0 you can use the new if-statement to conditionally emit a value. See [this commit](https://github.com/culturegraph/metafacture-core/commit/0530d6ad72ced992b479bff94d6f56bbef77bb2d) for an example.
+
 Use `<choose>` to give preference to A. Add a data source for '_id' as fallback (the record id literal '_id' is guaranteed to occur in every record).
 
 ```xml
@@ -32,6 +35,8 @@ In this case the fallback is E. Note that `<choose>` needs to be flushed with ev
 
 ## Emitting value of A whenever B occurs
 
+**Please note that this example is outdated:** As of Metafacture version 1.2.0 you can use the new if-statement to conditionally emit a value. See [this commit](https://github.com/culturegraph/metafacture-core/commit/0530d6ad72ced992b479bff94d6f56bbef77bb2d) for an example.
+
 If A happens only once and before Bs:
 
 ```xml
@@ -53,6 +58,9 @@ If A happens only once but after Bs, the Bs must be delayed by buffering them:
 ```
 
 ## Emitting value of A whenever B *not* occurs
+
+**Please note that this example is outdated:** As of Metafacture version 1.2.0 you can use the new if-statement to conditionally emit a value. See [this commit](https://github.com/culturegraph/metafacture-core/commit/0530d6ad72ced992b479bff94d6f56bbef77bb2d) for an example.
+
 ```xml
 <combine name="" value="${a}" reset="false">
    <data source="A" name="a"/>
