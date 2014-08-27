@@ -39,6 +39,8 @@ in: ("data1", "a"), ("data2", "b"), ("data2", "c"),("data1", "d"),
 out: ("concat", "{a,b,c,d}")
 ```
 
+Note: The values are concatenated in the order they appear in the input and not in the order of the data sources.
+
 #   choose
 collects all received values and emits the most preferred one on record end.  Preference is
 assigned according to the order the data sources appear within the choose tag.  Eligible
