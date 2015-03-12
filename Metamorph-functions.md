@@ -33,7 +33,7 @@ Regexp matching. Returns first occurrence of a pattern. The pattern is a Java r
 
 ```xml
 in:      ("a","baum")("b","pflaume")("d","apfel")  ...
-<regexp  pattern="a.m"/>
+<regexp  match="a.m"/>
 out:   ("b","aum")("b","aum")  ...
 ```
 
@@ -41,7 +41,7 @@ The optional format argument is used to address match groups.
 
 ```xml
 in:      ("a","from  1789  to  1900")  ...
-<regexp  pattern="(\d\d\d\d)  to  (\d\d\d\d)"  format="${1}-${2}"/>
+<regexp  match="(\d\d\d\d)  to  (\d\d\d\d)"  format="${1}-${2}"/>
 out:   ("b","1789-1900")  ...
 ```
 
