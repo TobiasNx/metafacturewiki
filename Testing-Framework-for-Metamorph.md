@@ -21,6 +21,37 @@ easily be expressed in XML:
 </metamorph-test>
 ```
 
+As of Metafacture 3.0.0 arbitrary data formats can be used to define the input and the expected result. The only requirement is that a reader for the specified mime-type is registered in [src/main/resources/metastream-readers.properties](https://github.com/culturegraph/metafacture-core/blob/master/src/main/resources/metastream-readers.properties). 
+
+In the example above the Metamorph transformation was part of the test case. In real world scenarios it is much more likely that you want to test transformations in an existing file. This can be achieved by specifying a `src` attribute on the `<transformation>` element:
+
+```xml
+<metamorph-test version="1.0"
+	xmlns="http://www.culturegraph.org/metamorph-test">
+   <test-case name="My Testcase1">
+      <input type="text/x-formeta">
+	record-id {
+           literal1: input-value
+        }
+      </input>
+      <transformation type="text/x-metamorph+xml" src="path/to/metamorph/resource.xml" />
+      <result type="text/x-formeta">
+	record-id {
+           literal1: result-value
+        }
+      </result>
+   </test-case>
+</metamorph-test>
+```
+
+By default the test framework requires that the order of records, literal and entity keys and values is as specified in the result. You can use the `strict-*-order` attributes to relax this requirement. There is one attribute for each level of ordering:
+
+* `strict-record-order`: The order of records emitted by the transformation must match the result data (based on their id)
+* `strict-key-order`: The order of keys must be same for the transformation output and the result data.
+* `strict-value-order`: Within equally named keys the order of values must be same
+
+# Integrate with JUnit #
+
 How to integrate such a test definition written in XML into JUnit? JUnit feeds
 on Java classes. Thus we need to provide such a class as a binding point:
 
@@ -38,7 +69,7 @@ for tests. If no such annotation is found, `TestSuite` looks for an XML
 files with the same name as the binding class. The XML files are expected to be
 located in the same folder as the binding class. The rationale is that both
 belong together and separating them would be confusing. Collocating the xml
-files with the class files is causing trouble with same build environments
+files with the class files is causing trouble with some build environments
 though. In the case of Maven there is an straight forward remedy. Add the following code to your POM: 
 
 ```xml
