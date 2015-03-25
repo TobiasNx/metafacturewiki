@@ -56,7 +56,9 @@ How to integrate such a test definition written in XML into JUnit? JUnit feeds
 on Java classes. Thus we need to provide such a class as a binding point:
 
 ```java
-import org.culturegraph.metamorph.test.TestSuite;
+import org.culturegraph.mf.test.TestSuite;
+import org.culturegraph.mf.test.TestSuite.TestDefinitions;
+import org.junit.runner.RunWith;
 
 @RunWith(TestSuite.class)
 @TestDefinitions({"My Testcase1.xml", "My Testcase2.xml"})
