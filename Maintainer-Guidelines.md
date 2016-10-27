@@ -19,7 +19,7 @@ git merge --no-ff cboehme-fix-xy
 ```
 The commit message of the merge command should follow this format:
 ```
-Resolve #PULLREQUEST-ID: Merge branch 'cboehme-fix-xy'
+Resolve #PULLREQUEST-ID: merge branch 'cboehme-fix-xy'
 
 Pull request with commits:
  - First line of first commit's message
