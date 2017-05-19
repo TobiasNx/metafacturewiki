@@ -2,11 +2,11 @@ Metafacture consists of a core library (metafacture-core) and a number of extens
 
 # Plugin Packages
 
-* **[metafacture-sql](https://github/culturegraph/metafacture-sql):** Modules for accessing SQL databases.
-* **[metafacture-mongodb](https://github/culturegraph/metafacture-mongodb):** Modules for reading and writing data in a [MongoDB](http://mongodb.org/).
-* **[metafacture-mediawiki](https://github/culturegraph/metafacture-mongodb):** Modules for parsing and analysing information in Mediawiki Wikis such as Wikipedia.
-* **[metafacture-cluster](https://github/culturegraph/metafacture-cluster):** Scripts and modules for using Metafacture on a Hadoop-Cluster.
-* **[metafacture-search]():** Modules for creating and reading [Lucene](http://lucene.apache.org/) indices.
+* **[metafacture-sql](https://github.com/culturegraph/metafacture-sql):** Modules for accessing SQL databases.
+* **[metafacture-mongodb](https://github.com/culturegraph/metafacture-mongodb):** Modules for reading and writing data in a [MongoDB](http://mongodb.org/).
+* **[metafacture-mediawiki](https://github.com/culturegraph/metafacture-mediawiki):** Modules for parsing and analysing information in Mediawiki Wikis such as Wikipedia.
+* **[metafacture-cluster](https://github.com/culturegraph/metafacture-cluster):** Scripts and modules for using Metafacture on a Hadoop-Cluster.
+* **[metafacture-search](https://github.com/culturegraph/metafacture-search):** Modules for creating and reading [Lucene](http://lucene.apache.org/) indices.
 
 # Satellite Projects
 
