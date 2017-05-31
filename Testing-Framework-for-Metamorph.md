@@ -56,18 +56,18 @@ How to integrate such a test definition written in XML into JUnit? JUnit feeds
 on Java classes. Thus we need to provide such a class as a binding point:
 
 ```java
-import org.culturegraph.mf.test.TestSuite;
-import org.culturegraph.mf.test.TestSuite.TestDefinitions;
+import org.culturegraph.mf.test.MetamorphTestSuite;
+import org.culturegraph.mf.test.MetamorphTestSuite.TestDefinitions;
 import org.junit.runner.RunWith;
 
-@RunWith(TestSuite.class)
+@RunWith(MetamorphTestSuite.class)
 @TestDefinitions({"My Testcase1.xml", "My Testcase2.xml"})
 public final class MyTest {/*bind to xml test*/}
 ```
 
-The `RunWith` annotation instructs JUnit to let `org.culturegraph.metamorph.test.TestSuite` handle the testing.
-Use the `TestDefinitions` annotation to tell `TestSuite` were to look
-for tests. If no such annotation is found, `TestSuite` looks for an XML
+The `RunWith` annotation instructs JUnit to let `org.culturegraph.mf.test.MetamorphTestSuite` handle the testing.
+Use the `TestDefinitions` annotation to tell `MetamorphTestSuite` were to look
+for tests. If no such annotation is found, `MetamorphTestSuite` looks for an XML
 files with the same name as the binding class. The XML files are expected to be
 located in the same folder as the binding class. The rationale is that both
 belong together and separating them would be confusing. Collocating the xml
