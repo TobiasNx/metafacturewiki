@@ -159,7 +159,7 @@ Parameters are scoped, which means that the ones provided with the `call-macro` 
 
 
 
-##Splitting Metamorph Definitions for Reuse
+## Splitting Metamorph Definitions for Reuse
 
 In a complex project setting there may be several Metamorph definitions in use,
 and it is likely that they share common parts. Imagine for instance a
