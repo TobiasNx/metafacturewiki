@@ -19,5 +19,5 @@ git merge --no-ff cboehme-fix-xy
 ```
 The commit message of the merge command should follow this format:
 ```
-Resolve #PULLREQUEST-ID: merge branch 'cboehme-fix-xy'
+Merge pull-request #PULLREQUEST-ID from cboehme/fix-xy
 ```
