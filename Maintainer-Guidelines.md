@@ -37,7 +37,7 @@ The following commands trigger a release build.
     ```
  1. Optionally, you can now test the build locally by invoking a gradle target:
     ```
-    ./gradlew check
+    ./gradlew assemble
     ```
  1. Finally, push the new tag to GitHub to trigger the actual release build:
     ```
