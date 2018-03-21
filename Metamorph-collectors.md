@@ -6,7 +6,7 @@ For more information, see:
 * test-cases (https://github.com/culturegraph/metafacture-core/tree/master/src/test/java/org/culturegraph/mf/morph/collectors)
 * Metamorph schema (https://github.com/culturegraph/metafacture-core/blob/master/src/main/resources/schemata/metamorph.xsd).
 
-#combine
+## combine
 
 `<combine>` is used to build one output literal from a combination of input literals. The following example for instance collects the sur- and forename which are stored in separate literals to combine them according to the pattern 'surname, forename'.
 ```xml
