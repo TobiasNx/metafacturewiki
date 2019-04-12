@@ -34,7 +34,7 @@ Regexp matching. Returns first occurrence of a pattern. The pattern is a Java r
 ```xml
 in:      ("a","baum")("b","pflaume")("d","apfel")  ...
 <regexp  match="a.m"/>
-out:   ("b","aum")("b","aum")  ...
+out:   ("a","baum")("b","pflaume")  ...
 ```
 
 The optional format argument is used to address match groups.
