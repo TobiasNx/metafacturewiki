@@ -2,13 +2,19 @@ This document provides a quick introduction to Metafacture Flux, a domain specif
 
 # Installing Flux
 
-There are two options: either you check out the source code in your favorite IDE, or you unzip a distribution of Metafacture into a directory of your choice. A distribution can be downloaded here: https://github.com/culturegraph/metafacture-runner/releases
+There are two options: either you check out the source code in your favorite IDE, or you unzip a distribution of Metafacture into a directory of your choice. A distribution can be downloaded here: https://github.com/metafacture/metafacture-core/releases
+
+If you are a developer on the command line, create a distribution of your branch:
+```bash
+$ ./gradlew installDist
+```
 
 You might also want to take a look at the Metafacture-IDE project: [[https://github.com/culturegraph/metafacture-ide]].
 
 # Running Flux
 
 If you are working with the source code directly, execute the class `org.culturegraph.mf.Flux`. If you are working with a distribution of Metafacture, execute the script `flux.sh` or `flux.bat` in the `bin/` folder.
+If you have installed a distribution of your branch (see above), go to `metafacture-core/metafacture-runner/build/install/metafacture-core` and execute the `flux.*` there.
 
 ## Run a Flux-File
 
