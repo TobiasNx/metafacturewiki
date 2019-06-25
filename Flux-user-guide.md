@@ -78,5 +78,14 @@ Note that unlike shell pipes, the data flowing between Flux commands is _typed_.
 2. There are several example flux files along with sample data in the folder `examples/`: https://github.com/metafacture/metafacture-core/tree/master/metafacture-runner/src/main/dist/examples
 
 # Adding new Commands
+Add your class and a descriptive flux shortcut to `flux-commands.properties`. This file acts as a lookup table for flux commands. Use the proper file, i.e. the one residing in the same module where your newly created class resides. If you have e.g. created a class in the module `metafacture-biblio`, you add the flux-command to https://github.com/metafacture/metafacture-core/blob/master/metafacture-biblio/src/main/resources/flux-commands.properties.
+Recompile. That's all to add a command.
 
-_under construction_
+However it's good practice to also add some annotations to the java class so that IDEs (and also humans) can pickup some hints what the new command can do, what type of input is allowed and what type of output is computed. Thus you know what commands can be chained together in a pipe.
+There are 4 annotations, see this example:
+```
+@Description("A MAB XML reader")
+@In(XmlReceiver.class)
+@Out(StreamReceiver.class)
+@FluxCommand("handle-mabxml")
+```
