@@ -82,7 +82,7 @@ Add your class and a descriptive flux shortcut to `flux-commands.properties`. Th
 Recompile. That's all to add a command.
 
 However it's good practice to also add some annotations to the java class so that IDEs (and also humans) can pickup some hints what the new command can do, what type of input is allowed and what type of output is computed. Thus you know what commands can be chained together in a pipe.
-There are 4 annotations, see this example:
+There are 4 annotations, see this [example](https://github.com/metafacture/metafacture-core/blob/master/metafacture-biblio/src/main/java/org/metafacture/biblio/AlephMabXmlHandler.java):
 ```
 @Description("A MAB XML reader")
 @In(XmlReceiver.class)
