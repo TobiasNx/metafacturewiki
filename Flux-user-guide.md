@@ -75,7 +75,7 @@ Note that unlike shell pipes, the data flowing between Flux commands is _typed_.
 
 ## Getting Help and Inspiration
 1. If executed without arguments, Flux will display a short help text along with a list of all registered commands. 
-2. There are several example flux files along with sample data in the folder `examples/`: https://github.com/culturegraph/metafacture-runner/tree/master/src/main/resources/assembly-resources/examples
+2. There are several example flux files along with sample data in the folder `examples/`: https://github.com/metafacture/metafacture-core/tree/master/metafacture-runner/src/main/dist/examples
 
 # Adding new Commands
 
