@@ -2,8 +2,12 @@ This document outlines standards of code quality and code style which we would l
 
 # Build Environment
 
-We currently use Maven 3.0.4. For a full build call the `package` goal. See `/pom.xml` for the build configuration. All build related issues are to be handled by Maven and Maven only (No extra ant etc.). 
-The folder structure of the project follows the Maven standards. The extra folder `/quality_assurance`  contains rule sets for static code analysis.
+We currently use Gradle 4.0.2, invoked by the [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html). For a full build execute in root directory
+```bash
+$ ./gradlew.sh install
+```
+respectively the `gradlew.bat` if you are on windows. See `build.gradle` for the build configuration. All build related issues are to be handled by gradle. 
+The folder structure of the project follows the Maven standards, except that there are directories (called `modules`) allowing a multi-module project structure.
 
 # Logging
 
