@@ -26,4 +26,5 @@ For more information on how to use Flux, see the [[Flux User Guide]].
 Our status: ![build status](https://travis-ci.org/culturegraph/metafacture-core.png?branch=master)
 
 * [[Code Quality and Style]]
+* [Add a flux command](https://github.com/metafacture/metafacture-core/wiki/Flux-user-guide#adding-new-commands)
 * [Metafacture on Travis-CI.org](https://travis-ci.org/culturegraph/metafacture-core)
