@@ -32,7 +32,7 @@ try{
 `DomainSpecificException` inherits from `RuntimeException`. 
 Throw `IllegalStateException`, `IllegalArgumentException` etc. to indicate `null` pointers before they corrupt the system state. In performance critical parts use `assert` statements. They can be activated on demand with the VM switch `-ea`. 
 
-#Testing
+# Testing
 
 ## Test Framework
 
@@ -67,7 +67,7 @@ Please follow the official [Java Code Conventions](http://www.oracle.com/technet
 
 Please document your code with JavaDocs. Especially leave a notice if code is experimental or not used. Also mention collaborating classes by adding `@see` and `@link` tags. 
 
-##Raw Types
+## Raw Types
 
 Do not use raw types. If unsure how to correctly generify or restore type safety, leave the raw type warning unsuppressed and place a `TODO` marker. 
 
