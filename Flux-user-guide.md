@@ -69,7 +69,7 @@ Furthermore, some commands have named options. These are set as follows `command
 To learn about the available options of a command, execute Flux without arguments: It will list all available commands, including options.
 
 To some commands, the entire environment can be given as argument. This is done with the `*` character: `morph("morphdef.xml", *)`. In this case Metamorph gains access to all variable assignments made in Flux.
-(See also [[Metamorph-Definition-Language#parameters-to-metamorph-definitions]]).
+(See also [[Metamorph-User-Guide#parameters-to-metamorph-definitions]]).
 
 Note that unlike shell pipes, the data flowing between Flux commands is _typed_. This means that only commands with matching signatures can be combined. To lookup the signatures, execute Flux without arguments. It will list all available commands, including signatures.
 
