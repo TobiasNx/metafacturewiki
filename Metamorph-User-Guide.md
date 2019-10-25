@@ -191,3 +191,5 @@ Use the `<include>` tag from the http://www.w3.org/2001/XInclude
 namespace to insert an external XML file into your definition. The included file
 must be valid xml itself, containing syntactically valid tags from the Metamorph
 namespace.
+
+It's also possible to only include a portion of the other metamorph. This is done by using the `xpointer` 	attribute, see [an example](https://github.com/metafacture/metafacture-core/commit/ccdad61e96100f607ff16f25563521c373ae68f8).
