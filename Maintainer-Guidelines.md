@@ -27,17 +27,17 @@ The code is quality-checked by sonarqube. The [result is uploaded to sonarcloud.
 
 # Making a release
 
-It's good habit to use semantic versioning in release numbers "A.B.C", i.e. increase "A" when it's a major release breaking backward compatibility; increase "B" when it got new features; increase "C" indicating bug-fixes.
+It's good habit to use semantic versioning in release numbers `A`.`B`.`C`, i.e. increase `A` when it's a major release breaking backward compatibility; increase `B` when it got new features; increase `C` indicating bug-fixes.
 
 The following commands trigger a release build.
 
  1. Create a signed tag:
     ```
-    git tag -s metafacture-core-`A`.`B`.`C`
+    git tag -s metafacture-core-A.B.C
     ```
  1. When prompted, add a sensible commit message. For instance, something like:
     ```
-    Publish first release of the Metafacture `A` line
+    Publish first release of the Metafacture A line
     ```
  1. Optionally, you can now test the build locally by invoking a gradle target:
     ```
@@ -45,7 +45,7 @@ The following commands trigger a release build.
     ```
  1. Finally, push the new tag to GitHub to trigger the actual release build:
     ```
-    git push --follow-tags metafacture-core-`A`.`B`.`C`
+    git push --follow-tags metafacture-core-A.B.C
     ```
   
 ## Github
