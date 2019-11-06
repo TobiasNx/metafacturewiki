@@ -41,5 +41,5 @@ The following commands trigger a release build.
     ```
  1. Finally, push the new tag to GitHub to trigger the actual release build:
     ```
-    git push origin metafacture-core-VERSION
+    git push --follow-tags metafacture-core-VERSION
     ```
