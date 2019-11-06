@@ -24,6 +24,8 @@ Merge pull-request #PULLREQUEST-ID from cboehme/fix-xy
 
 # Making a release
 
+It's good habit to use semantic versioning in release numbers "A.B.C", i.e. increase "A" when it's a major release breaking backward compatibility; increase "B" when it got new features; increase "C" indicating bug-fixes.
+  
 A release build is triggered on Travis CI by pushing an annotated git tag to the [metafacture/metafacture-core](https://github.com/metafacture/metafacture-core) repository. Ideally, this tag is also GPG signed. Our build configuration for Travis CI recognises annotated tags and automatically performs a release build and publishes it to GitHub and Maven Central.
 The following commands trigger a release build.
 
