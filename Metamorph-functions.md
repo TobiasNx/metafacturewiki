@@ -121,6 +121,21 @@ in:      ("a","hamster")("b","turtle")  ...
 <not-equals  string="hamster"/>
 out:   ("b","turtle")  ...
 ```
+#    contains
+Filtering based on containing.
+```xml
+in:      ("a","hamster in the house")("b","turtle in the house")  ...
+<contains  string="hamster"/>
+out:   ("a","hamster in the house")  ...
+```
+#    not-contains
+Filtering based on not containing.
+```xml
+in:      ("a","hamster in the house")("b","turtle in the house")  ...
+<not-contains  string="hamster"/>
+out:   ("b","turtle in the house")  ...
+```
+
 #    htmlanchor
 create an HTML anchor tag.
 
