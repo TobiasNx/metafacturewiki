@@ -1,4 +1,15 @@
-# Writing good git commit messages
+# Commits
+This is about how to make good commits resp. a good Pull Request.
+
+## Separate
+
+Do not mix multiple changes in to a single commit: split each unrelated change, however small, in to an individual commit. This makes each specific change easier to review.
+
+## Self-contain
+
+When submitting a pull request, do not have commits that "fix" a mistake in a prior commit. Squash the fix commit in to the commit that it fixes.
+
+## Write good git commit messages
 
 We follow the well-established conventions for writing git messages. In essence, your message should follow eight rules:
 
