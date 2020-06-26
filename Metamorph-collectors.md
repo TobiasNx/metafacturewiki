@@ -20,9 +20,9 @@ There are several important points to note: By default <combine> waits until at 
 The standard behavior of `<combine>` can be controlled with several arguments: 
 ## flushWith
 `flushWith= "name"` generates output on the occurrence of any literal or entity with _name_. Variables in the output pattern which are not yet bound to a value, are replaced with the empty string. Use `flushWith="record"` to set the record end as output trigger. 
-##reset
+## reset
 `reset="false"` disables the reset after output. 
-##sameEntity
+## sameEntity
 `sameEntity="true"` will reset the `<combine> `after each entity end and thus enforce combinations stemming from the same entities only. Note that the implementation only executes a reset if actually needed. Using `sameEntity="true"` has thus no negative impact on performance.
 
  
