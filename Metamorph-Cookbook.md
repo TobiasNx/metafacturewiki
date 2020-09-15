@@ -106,12 +106,12 @@ The id is re-emitted for every entity '028@'. The `reset=false` in the inner `<c
 
 This is another variation of 'Emitting value of A whenever B occurs'.
 
-Primarily needed for EqualsFilter but may also be useful as a generic option for flushing collectors:
+Primarily needed for `EqualsFilter` but may also be useful as a generic option for flushing collectors:
 
-    EqualsFilter: Use case described below.
-    Combine, Entity: No actual use case yet.
-    All: Already built-in (as an internal condition in emit()).
-    Choose, Concat, Group, Range, Square, Tuples: Inherently "incomplete" (isComplete() always false).
+* `EqualsFilter`: Use case described below.
+* `Combine`, `Entity`: No actual use case yet.
+* `All`: Already built-in (as an internal condition in `emit()`).
+* `Choose`, `Concat`, `Group`, `Range`, `Square`, `Tuples`: Inherently "incomplete" (`isComplete()` always `false`).
 
 When transforming data, we need to select fields based on some other field's subfield value:
 
@@ -126,10 +126,9 @@ When transforming data, we need to select fields based on some other field's sub
   <data name="value" source="POC  .b" />
 </combine>
 ```
-But this fires (emit()s) on every flush, even if the target value (@portfolio) wasn't received (it's only populated at a later point in the stream). 
+But this fires (`emit()`s) on every flush, even if the target value (`@portfolio`) wasn't received (it's only populated at a later point in the stream). 
 
-The solution is:
-restrict firing to only when the collector isComplete():
+The solution is: Restrict firing to only when the collector `isComplete()`:
 
 ```xml
 <combine name="date" value="${value}" sameEntity="true">
@@ -143,6 +142,6 @@ restrict firing to only when the collector isComplete():
 </combine>
 ```
 
-NOTE: This option is only applicable in combination with **flushWith**. Also, this is available with coming release **5.2.0**.
+**NOTE**: This option is only applicable in combination with `flushWith`. It's available since version **[5.2.0](/metafacture/metafacture-core/releases/tag/metafacture-core-5.2.0)** (upcoming release).
 
 # Open Problems
