@@ -102,7 +102,7 @@ The solution is:
 The id is re-emitted for every entity '028@'. The `reset=false` in the inner `<combine>` assures that the id is retained for the next occurrence of entity '028@'.
 
 
-## Restrict firing to only when the collector isComplete()
+## Restrict firing to only when the collector `isComplete()`
 
 This is another variation of 'Emitting value of A whenever B occurs'.
 
