@@ -102,6 +102,47 @@ The solution is:
 The id is re-emitted for every entity '028@'. The `reset=false` in the inner `<combine>` assures that the id is retained for the next occurrence of entity '028@'.
 
 
+## Restrict firing to only when the collector isComplete()
 
+This is another variation of 'Emitting value of A whenever B occurs'.
+
+Primarily needed for EqualsFilter but may also be useful as a generic option for flushing collectors:
+
+    EqualsFilter: Use case described below.
+    Combine, Entity: No actual use case yet.
+    All: Already built-in (as an internal condition in emit()).
+    Choose, Concat, Group, Range, Square, Tuples: Inherently "incomplete" (isComplete() always false).
+
+When transforming data, we need to select fields based on some other field's subfield value:
+
+```xml
+<combine name="date" value="${value}" sameEntity="true">
+  <if>
+    <equalsFilter name="" value="" flushWith="POC  .a" reset="true">
+      <data name="" source="@portfolio" />
+      <data name="" source="POC  .a" />
+    </equalsFilter>
+  </if>
+  <data name="value" source="POC  .b" />
+</combine>
+```
+But this fires (emit()s) on every flush, even if the target value (@portfolio) wasn't received (it's only populated at a later point in the stream). 
+
+The solution is:
+restrict firing to only when the collector isComplete():
+
+```xml
+<combine name="date" value="${value}" sameEntity="true">
+  <if>
+    <equalsFilter name="" value="" flushWith="POC  .a" flushIncomplete="false" reset="true">
+      <data name="" source="@portfolio" />
+      <data name="" source="POC  .a" />
+    </equalsFilter>
+  </if>
+  <data name="value" source="POC  .b" />
+</combine>
+```
+
+NOTE: This option is only applicable in combination with **flushWith**. Also, this is available with coming release **5.2.0**.
 
 # Open Problems
