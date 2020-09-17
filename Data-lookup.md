@@ -52,7 +52,7 @@ To address this issue, Metamorph allows you to load any class which implements t
 <javamap name="map-name" class="org.mydomain.MyMap" parameter1="xy" />
 ```
 
-`Map`s can also be added to Metamorph problematically in Java:
+`Map`s can also be added to Metamorph programmatically in Java:
 
 ```java
 //create a Map. Any object implementing Map<String, String> will do
