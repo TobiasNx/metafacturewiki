@@ -6,8 +6,7 @@ The following code snippet shows the high level organization of a Metamorph defi
 <?xml version="1.0" encoding="UTF-8"?>
 <metamorph xmlns="http://www.culturegraph.org/metamorph"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.culturegraph.org/metamorph metamorph.xsd"
-	entityMarker="." version="2">
+        entityMarker="." version="1">
    <meta><!-- Metadata --></meta>
    <macros><!-- Macro definitions --></macros>
    <rules><!-- Transformation rules --></rules>
