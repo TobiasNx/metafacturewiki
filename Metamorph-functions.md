@@ -3,8 +3,9 @@ and output zero to n name-value pairs.
 
 For more information, see also:
 * [[Metamorph Cookbook]]
-* test-cases (https://github.com/culturegraph/metafacture-core/tree/master/src/test/java/org/culturegraph/mf/morph/functions)
-* Metamorph schema (https://github.com/culturegraph/metafacture-core/blob/master/src/main/resources/schemata/metamorph.xsd).
+* [Test cases](https://github.com/metafacture/metafacture-core/tree/master/metamorph/src/test/java/org/metafacture/metamorph/functions)
+* [All functions](https://github.com/metafacture/metafacture-core/blob/master/metamorph/src/main/resources/morph-functions.properties)
+* [Metamorph schema](https://github.com/metafacture/metafacture-core/blob/master/metamorph/src/main/resources/schemata/metamorph.xsd)
 
 # compose
 Wraps the value in a prefix and postfix.
