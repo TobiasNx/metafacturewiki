@@ -106,7 +106,8 @@ The input data is passed to Metamorph. Everything that could be handled by Metam
 ```
 
 There are two of these keywords: `_elseNested` and `_elseFlattened` (well, there is also `_else` for historical reasons, but that's just an alias to `_elseFlattened`). The former one guarantees the structural consistency of the data (i.e. also passing _entities_) while the latter flattens the data using a dot (default) as a marker between _entities_ and _literals_.
-Since version `5.2`.
+
+_Since version `5.2`._
  
 ## Parameters to Metamorph Definitions
 
