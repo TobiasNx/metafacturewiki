@@ -142,6 +142,8 @@ The solution is: Restrict firing to only when the collector `isComplete()`:
 </combine>
 ```
 
-**NOTE**: This option is only applicable in combination with `flushWith`. It's available since version **[5.2.0](/metafacture/metafacture-core/releases/tag/metafacture-core-5.2.0)** (upcoming release).
+**NOTE**: This option is only applicable in combination with `flushWith`.
+
+_Since version `5.2`._
 
 # Open Problems
