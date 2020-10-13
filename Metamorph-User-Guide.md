@@ -22,7 +22,7 @@ Finally the optional `maps` block allows to define maps/dictionaries for lookup 
 
 ## Addressing Pieces of Data
 
-The `<data>` tag is a used inside of `<rules>`. It is used to receive literals. Use the `source` attribute to address the literal you want to catch. The following code would receive the value of any literal with name _literalname_, enclosed in an entity named _entityname_.
+The `<data>` tag is used inside of `<rules>`. It is used to receive literals. Use the `source` attribute to address the literal you want to catch. The following code would receive the value of any literal with name _literalname_, enclosed in an entity named _entityname_.
 
 ```xml
 <data source="entityname.literalname" name="newName" />
