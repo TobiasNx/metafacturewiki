@@ -12,9 +12,10 @@ $ ./gradlew installDist
 You might also want to take a look at the Metafacture-IDE project: [[https://github.com/culturegraph/metafacture-ide]].
 
 # Running Flux
-
-If you are working with the source code directly, execute the class `org.culturegraph.mf.Flux`. If you are working with a distribution of Metafacture, execute the script `flux.sh` or `flux.bat` in the `bin/` folder.
-If you have installed a distribution of your branch (see above), go to `metafacture-core/metafacture-runner/build/install/metafacture-core` and execute the `flux.*` there.
+There are 3 ways to run a flux:
+1. If you are working with the source code directly, execute the class `org.culturegraph.mf.Flux`.
+2. If you are working with a distribution of Metafacture, execute the script `flux.sh` or `flux.bat` in the `bin/` folder.
+3. If you have installed a distribution of your branch (see above), go to `metafacture-core/metafacture-runner/build/install/metafacture-core` and execute the `flux.*` there.
 
 ## Run a Flux-File
 
