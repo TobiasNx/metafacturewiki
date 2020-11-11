@@ -11,20 +11,27 @@ For more information, see:
 `<combine>` is used to build one output literal from a combination of input literals. The following example for instance collects the sur- and forename which are stored in separate literals to combine them according to the pattern 'surname, forename'.
 ```xml
 <combine name="gnd:variantNameForThePerson" value="${surname}, ${forename}">
+
   <data source="028A.a" name="surname" />
   <data source="028A.d" name="forename"/>
 </combine>
+```
+fix:
+```
+do combine('gnd:variantNameForThePerson', '${surname}, ${forename}')
+  map(028A.a, surname)
+  map(028A.d, forename)
+end
 ```
 There are several important points to note: By default <combine> waits until at least one value from each `<data>` tag is received. If the collection is not complete on record end, no output is generated. After each output, the state of `<combine>` is reset. If one `<data>` tag receives literals repeatedly before the collection is complete only the last value will be retained.
 
 The standard behavior of `<combine>` can be controlled with several arguments: 
 ## flushWith
-`flushWith= "name"` generates output on the occurrence of any literal or entity with _name_. Variables in the output pattern which are not yet bound to a value, are replaced with the empty string. Use `flushWith="record"` to set the record end as output trigger. 
+`flushWith= "name"` (fix: `flushWith: 'name'` ) generates output on the occurrence of any literal or entity with _name_. Variables in the output pattern which are not yet bound to a value, are replaced with the empty string. Use `flushWith="record"` to set the record end as output trigger. 
 ## reset
-`reset="false"` disables the reset after output. 
+`reset="false"` (fix: `reset: 'false'`) disables the reset after output. 
 ## sameEntity
-`sameEntity="true"` will reset the `<combine> `after each entity end and thus enforce combinations stemming from the same entities only. Note that the implementation only executes a reset if actually needed. Using `sameEntity="true"` has thus no negative impact on performance.
-
+`sameEntity="true"` (fix: `sameEntity: 'true'`) will reset the `<combine> `after each entity end and thus enforce combinations stemming from the same entities only. Note that the implementation only executes a reset if actually needed. Using `sameEntity="true"` has thus no negative impact on performance.
  
 #   concat
 collects all received values and concatenates them on record end. `flushWith="name"`
@@ -36,6 +43,16 @@ in: ("data1", "a"), ("data2", "b"), ("data2", "c"),("data1", "d"),
    <data source="data1" />
    <data source="data2" />
 </concat>
+out: ("concat", "{a,b,c,d}")
+```
+
+fix:
+```
+in: ("data1", "a"), ("data2", "b"), ("data2", "c"),("data1", "d"),
+do concat(delimiter: ',', name: 'concat', prefix: '{', postfix: '}')
+   map(data1)
+   map(data2)
+end
 out: ("concat", "{a,b,c,d}")
 ```
 
@@ -54,6 +71,17 @@ in: ("data1", "a"), ("data2", "b")
 </choose>
 out: ("data", "a")
 ```
+fix:
+```
+in: ("data1", "a"), ("data2", "b")
+do choose(name: 'data')
+   map(data1)
+   map(data2)
+end
+out: ("data", "a")
+```
+
+
 if, however `("data1", "a")` was missing, the output would be `("data", "b")`.
 
 #   group
@@ -73,6 +101,14 @@ in: ("data", "a"), ("data", "b"), ("data", "c")
    <data source="data" />
 </square>
 out: ("square", "{a,b}"), ("square", "{a,c}"),("square", "{b,c}")
+```
+fix:
+```
+in: ("data", "a"), ("data", "b"), ("data", "c")
+do square(delimiter:',', name: 'square', prefix: '{', postfix: '}')
+   map(data)
+end
+out: ("square", "{a,b}"), ("square", "{a,c}"),("square", "{b,c}")
 
 ```
 
@@ -81,3 +117,5 @@ collects literals to rearrange them as an entity. Use the argument name to assig
 the entity. Further arguments are `sameEntity`, `flushWith` and `reset`. Note that the `<entity>`
 tag can only appear as child of the `<rules>` tag or another entity tag as it does not output
 a literal.
+
+fix: `do entity`
