@@ -11,7 +11,7 @@ For more information, see also:
 Wraps the value in a prefix and postfix.
 ```xml
 in:      ("a","b")("c","d")  ...
-<compose  prefix="Hello  "  postfix="!"/>
+<compose  prefix="Hello,  "  postfix="!"/>
 out:   ("a","Hello  b!")("c","Hello  d!")  ...
 ```
 fix: 
@@ -42,12 +42,9 @@ in:      ("a","b")("c","d")  ...
 <count/>
 out:   ("a","1")("c","2")  ...
 ```
-fix: 
-```
-in:      ("a","b")("c","d")  ...
-count()
-out:   ("a","1")("c","2")  ...
-```
+fix:
+
+_needs to be added later_
 
 #    regexp
 Regexp matching. Returns first occurrence of a pattern. The pattern is a Java regex Pattern
@@ -133,8 +130,9 @@ in:      ("a","en")("b","es")("c","xy")  ...
 </lookup>
 out:   ("a","english")("c","spanish")  ...
 ```
-Ohne spezifisches Entry mit vergleichsliste
-```xml
+Fix:
+no specific entry :
+```
 in:      ("a","en")("b","es")("c","xy")  ...
 lookup(in: '[source of mapping list].tsv')
 out:   ("a","english")("c","spanish")  ...
