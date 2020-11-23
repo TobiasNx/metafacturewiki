@@ -102,7 +102,7 @@ Read more:
 The input data is passed to Metamorph. Everything that could be handled by Metamorph is passed to receivers. If you have empty rules, no data would be passed. But sometimes it is desired to simply pass the data through Metamorph, or to handle a minor part of the data and leave the rest of the original input data untouched. This can be achieved with a special keyword in the `name` attribute of the `<data>` tag, e.g:
 
 ```xml
-<data name="_elseNested" />
+<data source="_elseNested" />
 ```
 
 There are two of these keywords: `_elseNested` and `_elseFlattened` (well, there is also `_else` for historical reasons, but that's just an alias to `_elseFlattened`). The former one guarantees the structural consistency of the data (i.e. also passing _entities_) while the latter flattens the data using a dot (default) as a marker between _entities_ and _literals_.
